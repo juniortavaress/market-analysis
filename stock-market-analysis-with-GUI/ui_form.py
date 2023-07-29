@@ -361,6 +361,19 @@ class Ui_Widget(object):
         self.verticalLayout_2.addWidget(self.frame_2)
 
         self.stackedWidget.addWidget(self.welcomePage)
+        self.loadingPage = QWidget()
+        self.loadingPage.setObjectName(u"loadingPage")
+        self.horizontalLayout_26 = QHBoxLayout(self.loadingPage)
+        self.horizontalLayout_26.setObjectName(u"horizontalLayout_26")
+        self.frame2 = QFrame(self.loadingPage)
+        self.frame2.setObjectName(u"frame2")
+        self.frame2.setMaximumSize(QSize(110, 110))
+        self.frame2.setFrameShape(QFrame.StyledPanel)
+        self.frame2.setFrameShadow(QFrame.Raised)
+
+        self.horizontalLayout_26.addWidget(self.frame2)
+
+        self.stackedWidget.addWidget(self.loadingPage)
         self.stocksOptionsPage = QWidget()
         self.stocksOptionsPage.setObjectName(u"stocksOptionsPage")
         self.horizontalLayout_4 = QHBoxLayout(self.stocksOptionsPage)
@@ -2463,7 +2476,7 @@ class Ui_Widget(object):
 
         self.retranslateUi(Widget)
 
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(4)
 
 
         QMetaObject.connectSlotsByName(Widget)

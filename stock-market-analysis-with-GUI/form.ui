@@ -35,7 +35,7 @@
    <item>
     <widget class="QStackedWidget" name="stackedWidget">
      <property name="currentIndex">
-      <number>0</number>
+      <number>4</number>
      </property>
      <widget class="QWidget" name="welcomePage">
       <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -720,6 +720,26 @@ QPushButton:pressed {
            </widget>
           </item>
          </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="loadingPage">
+      <layout class="QHBoxLayout" name="horizontalLayout_26">
+       <item>
+        <widget class="QFrame" name="frame2">
+         <property name="maximumSize">
+          <size>
+           <width>110</width>
+           <height>110</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
         </widget>
        </item>
       </layout>

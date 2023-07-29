@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 8.0.2, 2023-07-28T15:41:44. -->
+<!-- Written by QtCreator 8.0.2, 2023-07-28T21:40:19. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -140,15 +140,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">widget.py</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.D:/User/OneDrive/Documentos/GitHub/stock-market-analysis/widget.py</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">D:/User/OneDrive/Documentos/GitHub/stock-market-analysis/widget.py</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">D:\User\OneDrive\Documentos\GitHub\stock-market-analysis\widget.py</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">widget.py2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.D:/User/OneDrive/Documentos/GitHub/stock-market-analysis/stock-market-analysis-with-GUI/widget.py</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">D:/User/OneDrive/Documentos/GitHub/stock-market-analysis/stock-market-analysis-with-GUI/widget.py</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">D:\User\OneDrive\Documentos\GitHub\stock-market-analysis\stock-market-analysis-with-GUI\widget.py</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/User/OneDrive/Documentos/GitHub/stock-market-analysis</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/User/OneDrive/Documentos/GitHub/stock-market-analysis/stock-market-analysis-with-GUI</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.1">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -157,15 +157,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">teste.py</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.D:/User/OneDrive/Documentos/GitHub/stock-market-analysis/teste.py</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">D:/User/OneDrive/Documentos/GitHub/stock-market-analysis/teste.py</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">D:\User\OneDrive\Documentos\GitHub\stock-market-analysis\teste.py</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">webScraping.py2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.D:/User/OneDrive/Documentos/GitHub/stock-market-analysis/stock-market-analysis-with-GUI/webScraping.py</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">D:/User/OneDrive/Documentos/GitHub/stock-market-analysis/stock-market-analysis-with-GUI/webScraping.py</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">D:\User\OneDrive\Documentos\GitHub\stock-market-analysis\stock-market-analysis-with-GUI\webScraping.py</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/User/OneDrive/Documentos/GitHub/stock-market-analysis</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/User/OneDrive/Documentos/GitHub/stock-market-analysis/stock-market-analysis-with-GUI</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.2">
     <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
@@ -174,15 +174,15 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">webScraping.py</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.D:/User/OneDrive/Documentos/GitHub/stock-market-analysis/webScraping.py</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">D:/User/OneDrive/Documentos/GitHub/stock-market-analysis/webScraping.py</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">D:\User\OneDrive\Documentos\GitHub\stock-market-analysis\webScraping.py</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">loading.py</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.D:/User/OneDrive/Documentos/GitHub/stock-market-analysis/stock-market-analysis-with-GUI/loading.py</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">D:/User/OneDrive/Documentos/GitHub/stock-market-analysis/stock-market-analysis-with-GUI/loading.py</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">D:\User\OneDrive\Documentos\GitHub\stock-market-analysis\stock-market-analysis-with-GUI\loading.py</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/User/OneDrive/Documentos/GitHub/stock-market-analysis</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/User/OneDrive/Documentos/GitHub/stock-market-analysis/stock-market-analysis-with-GUI</value>
    </valuemap>
    <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">3</value>
   </valuemap>

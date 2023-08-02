@@ -1,3 +1,3 @@
 {
-    "files": ["form.ui","main.ipynb","widget.py","webScraping.py","teste.py","loading.py"]
+    "files": ["webScraping.py","main.ipynb","loading.py","teste.py","form.ui","widget.py","processingThread.py","Images.qrc"]
 }

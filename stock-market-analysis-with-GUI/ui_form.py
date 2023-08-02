@@ -250,7 +250,7 @@ class Ui_Widget(object):
         self.yes.setFont(font2)
         self.yes.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.yes.setIconSize(QSize(31, 30))
-        self.yes.setAutoExclusive(False)
+        self.yes.setAutoExclusive(True)
 
         self.horizontalLayout_17.addWidget(self.yes)
 
@@ -258,7 +258,7 @@ class Ui_Widget(object):
         self.no.setObjectName(u"no")
         self.no.setFont(font2)
         self.no.setStyleSheet(u"font: 14pt \"Segoe UI\";")
-        self.no.setAutoExclusive(False)
+        self.no.setAutoExclusive(True)
 
         self.horizontalLayout_17.addWidget(self.no)
 
@@ -774,21 +774,21 @@ class Ui_Widget(object):
         self.horizontalLayout_13.setSpacing(0)
         self.horizontalLayout_13.setObjectName(u"horizontalLayout_13")
         self.horizontalLayout_13.setContentsMargins(35, 0, 50, 0)
-        self.lineEdit_38 = QLineEdit(self.frame_24)
-        self.lineEdit_38.setObjectName(u"lineEdit_38")
-        self.lineEdit_38.setMaximumSize(QSize(70, 16777215))
+        self.min_DY = QLineEdit(self.frame_24)
+        self.min_DY.setObjectName(u"min_DY")
+        self.min_DY.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_13.addWidget(self.lineEdit_38)
+        self.horizontalLayout_13.addWidget(self.min_DY)
 
         self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_13.addItem(self.horizontalSpacer)
 
-        self.lineEdit_37 = QLineEdit(self.frame_24)
-        self.lineEdit_37.setObjectName(u"lineEdit_37")
-        self.lineEdit_37.setMaximumSize(QSize(70, 16777215))
+        self.max_DY = QLineEdit(self.frame_24)
+        self.max_DY.setObjectName(u"max_DY")
+        self.max_DY.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_13.addWidget(self.lineEdit_37)
+        self.horizontalLayout_13.addWidget(self.max_DY)
 
 
         self.horizontalLayout_12.addWidget(self.frame_24)
@@ -820,21 +820,21 @@ class Ui_Widget(object):
         self.horizontalLayout_61.setSpacing(0)
         self.horizontalLayout_61.setObjectName(u"horizontalLayout_61")
         self.horizontalLayout_61.setContentsMargins(35, 0, 50, 0)
-        self.lineEdit_73 = QLineEdit(self.frame_28)
-        self.lineEdit_73.setObjectName(u"lineEdit_73")
-        self.lineEdit_73.setMaximumSize(QSize(70, 16777215))
+        self.min_PL = QLineEdit(self.frame_28)
+        self.min_PL.setObjectName(u"min_PL")
+        self.min_PL.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_61.addWidget(self.lineEdit_73)
+        self.horizontalLayout_61.addWidget(self.min_PL)
 
         self.horizontalSpacer_29 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_61.addItem(self.horizontalSpacer_29)
 
-        self.lineEdit_74 = QLineEdit(self.frame_28)
-        self.lineEdit_74.setObjectName(u"lineEdit_74")
-        self.lineEdit_74.setMaximumSize(QSize(70, 16777215))
+        self.max_PL = QLineEdit(self.frame_28)
+        self.max_PL.setObjectName(u"max_PL")
+        self.max_PL.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_61.addWidget(self.lineEdit_74)
+        self.horizontalLayout_61.addWidget(self.max_PL)
 
 
         self.horizontalLayout_60.addWidget(self.frame_28)
@@ -866,21 +866,21 @@ class Ui_Widget(object):
         self.horizontalLayout_63.setSpacing(0)
         self.horizontalLayout_63.setObjectName(u"horizontalLayout_63")
         self.horizontalLayout_63.setContentsMargins(35, 0, 50, 0)
-        self.lineEdit_75 = QLineEdit(self.frame_32)
-        self.lineEdit_75.setObjectName(u"lineEdit_75")
-        self.lineEdit_75.setMaximumSize(QSize(70, 16777215))
+        self.min_PVP = QLineEdit(self.frame_32)
+        self.min_PVP.setObjectName(u"min_PVP")
+        self.min_PVP.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_63.addWidget(self.lineEdit_75)
+        self.horizontalLayout_63.addWidget(self.min_PVP)
 
         self.horizontalSpacer_30 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_63.addItem(self.horizontalSpacer_30)
 
-        self.lineEdit_76 = QLineEdit(self.frame_32)
-        self.lineEdit_76.setObjectName(u"lineEdit_76")
-        self.lineEdit_76.setMaximumSize(QSize(70, 16777215))
+        self.max_PVP = QLineEdit(self.frame_32)
+        self.max_PVP.setObjectName(u"max_PVP")
+        self.max_PVP.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_63.addWidget(self.lineEdit_76)
+        self.horizontalLayout_63.addWidget(self.max_PVP)
 
 
         self.horizontalLayout_62.addWidget(self.frame_32)
@@ -912,21 +912,21 @@ class Ui_Widget(object):
         self.horizontalLayout_67.setSpacing(0)
         self.horizontalLayout_67.setObjectName(u"horizontalLayout_67")
         self.horizontalLayout_67.setContentsMargins(35, 0, 50, 0)
-        self.lineEdit_79 = QLineEdit(self.frame_40)
-        self.lineEdit_79.setObjectName(u"lineEdit_79")
-        self.lineEdit_79.setMaximumSize(QSize(70, 16777215))
+        self.min_MargemEbit = QLineEdit(self.frame_40)
+        self.min_MargemEbit.setObjectName(u"min_MargemEbit")
+        self.min_MargemEbit.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_67.addWidget(self.lineEdit_79)
+        self.horizontalLayout_67.addWidget(self.min_MargemEbit)
 
         self.horizontalSpacer_32 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_67.addItem(self.horizontalSpacer_32)
 
-        self.lineEdit_80 = QLineEdit(self.frame_40)
-        self.lineEdit_80.setObjectName(u"lineEdit_80")
-        self.lineEdit_80.setMaximumSize(QSize(70, 16777215))
+        self.max_MargemEbit = QLineEdit(self.frame_40)
+        self.max_MargemEbit.setObjectName(u"max_MargemEbit")
+        self.max_MargemEbit.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_67.addWidget(self.lineEdit_80)
+        self.horizontalLayout_67.addWidget(self.max_MargemEbit)
 
 
         self.horizontalLayout_66.addWidget(self.frame_40)
@@ -958,21 +958,21 @@ class Ui_Widget(object):
         self.horizontalLayout_93.setSpacing(0)
         self.horizontalLayout_93.setObjectName(u"horizontalLayout_93")
         self.horizontalLayout_93.setContentsMargins(35, 0, 50, 0)
-        self.lineEdit_105 = QLineEdit(self.frame_74)
-        self.lineEdit_105.setObjectName(u"lineEdit_105")
-        self.lineEdit_105.setMaximumSize(QSize(70, 16777215))
+        self.min_Margem = QLineEdit(self.frame_74)
+        self.min_Margem.setObjectName(u"min_Margem")
+        self.min_Margem.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_93.addWidget(self.lineEdit_105)
+        self.horizontalLayout_93.addWidget(self.min_Margem)
 
         self.horizontalSpacer_45 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_93.addItem(self.horizontalSpacer_45)
 
-        self.lineEdit_106 = QLineEdit(self.frame_74)
-        self.lineEdit_106.setObjectName(u"lineEdit_106")
-        self.lineEdit_106.setMaximumSize(QSize(70, 16777215))
+        self.max_Margem = QLineEdit(self.frame_74)
+        self.max_Margem.setObjectName(u"max_Margem")
+        self.max_Margem.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_93.addWidget(self.lineEdit_106)
+        self.horizontalLayout_93.addWidget(self.max_Margem)
 
 
         self.horizontalLayout_92.addWidget(self.frame_74)
@@ -1004,21 +1004,21 @@ class Ui_Widget(object):
         self.horizontalLayout_65.setSpacing(0)
         self.horizontalLayout_65.setObjectName(u"horizontalLayout_65")
         self.horizontalLayout_65.setContentsMargins(35, 0, 50, 0)
-        self.lineEdit_77 = QLineEdit(self.frame_36)
-        self.lineEdit_77.setObjectName(u"lineEdit_77")
-        self.lineEdit_77.setMaximumSize(QSize(70, 16777215))
+        self.min_P_EBIT = QLineEdit(self.frame_36)
+        self.min_P_EBIT.setObjectName(u"min_P_EBIT")
+        self.min_P_EBIT.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_65.addWidget(self.lineEdit_77)
+        self.horizontalLayout_65.addWidget(self.min_P_EBIT)
 
         self.horizontalSpacer_31 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_65.addItem(self.horizontalSpacer_31)
 
-        self.lineEdit_78 = QLineEdit(self.frame_36)
-        self.lineEdit_78.setObjectName(u"lineEdit_78")
-        self.lineEdit_78.setMaximumSize(QSize(70, 16777215))
+        self.max_P_EBIT = QLineEdit(self.frame_36)
+        self.max_P_EBIT.setObjectName(u"max_P_EBIT")
+        self.max_P_EBIT.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_65.addWidget(self.lineEdit_78)
+        self.horizontalLayout_65.addWidget(self.max_P_EBIT)
 
 
         self.horizontalLayout_64.addWidget(self.frame_36)
@@ -1050,21 +1050,21 @@ class Ui_Widget(object):
         self.horizontalLayout_69.setSpacing(0)
         self.horizontalLayout_69.setObjectName(u"horizontalLayout_69")
         self.horizontalLayout_69.setContentsMargins(35, 0, 50, 0)
-        self.lineEdit_81 = QLineEdit(self.frame_44)
-        self.lineEdit_81.setObjectName(u"lineEdit_81")
-        self.lineEdit_81.setMaximumSize(QSize(70, 16777215))
+        self.min_Divida_Pat = QLineEdit(self.frame_44)
+        self.min_Divida_Pat.setObjectName(u"min_Divida_Pat")
+        self.min_Divida_Pat.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_69.addWidget(self.lineEdit_81)
+        self.horizontalLayout_69.addWidget(self.min_Divida_Pat)
 
         self.horizontalSpacer_33 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_69.addItem(self.horizontalSpacer_33)
 
-        self.lineEdit_82 = QLineEdit(self.frame_44)
-        self.lineEdit_82.setObjectName(u"lineEdit_82")
-        self.lineEdit_82.setMaximumSize(QSize(70, 16777215))
+        self.max_Divida_Pat = QLineEdit(self.frame_44)
+        self.max_Divida_Pat.setObjectName(u"max_Divida_Pat")
+        self.max_Divida_Pat.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_69.addWidget(self.lineEdit_82)
+        self.horizontalLayout_69.addWidget(self.max_Divida_Pat)
 
 
         self.horizontalLayout_68.addWidget(self.frame_44)
@@ -1096,21 +1096,21 @@ class Ui_Widget(object):
         self.horizontalLayout_75.setSpacing(0)
         self.horizontalLayout_75.setObjectName(u"horizontalLayout_75")
         self.horizontalLayout_75.setContentsMargins(35, 0, 50, 0)
-        self.lineEdit_87 = QLineEdit(self.frame_56)
-        self.lineEdit_87.setObjectName(u"lineEdit_87")
-        self.lineEdit_87.setMaximumSize(QSize(70, 16777215))
+        self.min_P_Cap = QLineEdit(self.frame_56)
+        self.min_P_Cap.setObjectName(u"min_P_Cap")
+        self.min_P_Cap.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_75.addWidget(self.lineEdit_87)
+        self.horizontalLayout_75.addWidget(self.min_P_Cap)
 
         self.horizontalSpacer_36 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_75.addItem(self.horizontalSpacer_36)
 
-        self.lineEdit_88 = QLineEdit(self.frame_56)
-        self.lineEdit_88.setObjectName(u"lineEdit_88")
-        self.lineEdit_88.setMaximumSize(QSize(70, 16777215))
+        self.max_P_Cap = QLineEdit(self.frame_56)
+        self.max_P_Cap.setObjectName(u"max_P_Cap")
+        self.max_P_Cap.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_75.addWidget(self.lineEdit_88)
+        self.horizontalLayout_75.addWidget(self.max_P_Cap)
 
 
         self.horizontalLayout_74.addWidget(self.frame_56)
@@ -1142,21 +1142,21 @@ class Ui_Widget(object):
         self.horizontalLayout_73.setSpacing(0)
         self.horizontalLayout_73.setObjectName(u"horizontalLayout_73")
         self.horizontalLayout_73.setContentsMargins(35, 0, 50, 0)
-        self.lineEdit_85 = QLineEdit(self.frame_52)
-        self.lineEdit_85.setObjectName(u"lineEdit_85")
-        self.lineEdit_85.setMaximumSize(QSize(70, 16777215))
+        self.min_ROE = QLineEdit(self.frame_52)
+        self.min_ROE.setObjectName(u"min_ROE")
+        self.min_ROE.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_73.addWidget(self.lineEdit_85)
+        self.horizontalLayout_73.addWidget(self.min_ROE)
 
         self.horizontalSpacer_35 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_73.addItem(self.horizontalSpacer_35)
 
-        self.lineEdit_86 = QLineEdit(self.frame_52)
-        self.lineEdit_86.setObjectName(u"lineEdit_86")
-        self.lineEdit_86.setMaximumSize(QSize(70, 16777215))
+        self.max_ROE = QLineEdit(self.frame_52)
+        self.max_ROE.setObjectName(u"max_ROE")
+        self.max_ROE.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_73.addWidget(self.lineEdit_86)
+        self.horizontalLayout_73.addWidget(self.max_ROE)
 
 
         self.horizontalLayout_72.addWidget(self.frame_52)
@@ -1188,21 +1188,21 @@ class Ui_Widget(object):
         self.horizontalLayout_71.setSpacing(0)
         self.horizontalLayout_71.setObjectName(u"horizontalLayout_71")
         self.horizontalLayout_71.setContentsMargins(35, 0, 50, 0)
-        self.lineEdit_83 = QLineEdit(self.frame_48)
-        self.lineEdit_83.setObjectName(u"lineEdit_83")
-        self.lineEdit_83.setMaximumSize(QSize(70, 16777215))
+        self.min_ROA = QLineEdit(self.frame_48)
+        self.min_ROA.setObjectName(u"min_ROA")
+        self.min_ROA.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_71.addWidget(self.lineEdit_83)
+        self.horizontalLayout_71.addWidget(self.min_ROA)
 
         self.horizontalSpacer_34 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_71.addItem(self.horizontalSpacer_34)
 
-        self.lineEdit_84 = QLineEdit(self.frame_48)
-        self.lineEdit_84.setObjectName(u"lineEdit_84")
-        self.lineEdit_84.setMaximumSize(QSize(70, 16777215))
+        self.max_ROA = QLineEdit(self.frame_48)
+        self.max_ROA.setObjectName(u"max_ROA")
+        self.max_ROA.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_71.addWidget(self.lineEdit_84)
+        self.horizontalLayout_71.addWidget(self.max_ROA)
 
 
         self.horizontalLayout_70.addWidget(self.frame_48)
@@ -1234,21 +1234,21 @@ class Ui_Widget(object):
         self.horizontalLayout_79.setSpacing(0)
         self.horizontalLayout_79.setObjectName(u"horizontalLayout_79")
         self.horizontalLayout_79.setContentsMargins(35, 0, 50, 0)
-        self.lineEdit_91 = QLineEdit(self.frame_61)
-        self.lineEdit_91.setObjectName(u"lineEdit_91")
-        self.lineEdit_91.setMaximumSize(QSize(70, 16777215))
+        self.min_ROIC = QLineEdit(self.frame_61)
+        self.min_ROIC.setObjectName(u"min_ROIC")
+        self.min_ROIC.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_79.addWidget(self.lineEdit_91)
+        self.horizontalLayout_79.addWidget(self.min_ROIC)
 
         self.horizontalSpacer_38 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_79.addItem(self.horizontalSpacer_38)
 
-        self.lineEdit_92 = QLineEdit(self.frame_61)
-        self.lineEdit_92.setObjectName(u"lineEdit_92")
-        self.lineEdit_92.setMaximumSize(QSize(70, 16777215))
+        self.max_ROIC = QLineEdit(self.frame_61)
+        self.max_ROIC.setObjectName(u"max_ROIC")
+        self.max_ROIC.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_79.addWidget(self.lineEdit_92)
+        self.horizontalLayout_79.addWidget(self.max_ROIC)
 
 
         self.horizontalLayout_78.addWidget(self.frame_61)
@@ -1280,21 +1280,21 @@ class Ui_Widget(object):
         self.horizontalLayout_77.setSpacing(0)
         self.horizontalLayout_77.setObjectName(u"horizontalLayout_77")
         self.horizontalLayout_77.setContentsMargins(35, 0, 50, 0)
-        self.lineEdit_89 = QLineEdit(self.frame_59)
-        self.lineEdit_89.setObjectName(u"lineEdit_89")
-        self.lineEdit_89.setMaximumSize(QSize(70, 16777215))
+        self.min_PatAti = QLineEdit(self.frame_59)
+        self.min_PatAti.setObjectName(u"min_PatAti")
+        self.min_PatAti.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_77.addWidget(self.lineEdit_89)
+        self.horizontalLayout_77.addWidget(self.min_PatAti)
 
         self.horizontalSpacer_37 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_77.addItem(self.horizontalSpacer_37)
 
-        self.lineEdit_90 = QLineEdit(self.frame_59)
-        self.lineEdit_90.setObjectName(u"lineEdit_90")
-        self.lineEdit_90.setMaximumSize(QSize(70, 16777215))
+        self.max_PatAti = QLineEdit(self.frame_59)
+        self.max_PatAti.setObjectName(u"max_PatAti")
+        self.max_PatAti.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_77.addWidget(self.lineEdit_90)
+        self.horizontalLayout_77.addWidget(self.max_PatAti)
 
 
         self.horizontalLayout_76.addWidget(self.frame_59)
@@ -1326,21 +1326,21 @@ class Ui_Widget(object):
         self.horizontalLayout_81.setSpacing(0)
         self.horizontalLayout_81.setObjectName(u"horizontalLayout_81")
         self.horizontalLayout_81.setContentsMargins(35, 0, 50, 0)
-        self.lineEdit_93 = QLineEdit(self.frame_63)
-        self.lineEdit_93.setObjectName(u"lineEdit_93")
-        self.lineEdit_93.setMaximumSize(QSize(70, 16777215))
+        self.min_PasAti = QLineEdit(self.frame_63)
+        self.min_PasAti.setObjectName(u"min_PasAti")
+        self.min_PasAti.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_81.addWidget(self.lineEdit_93)
+        self.horizontalLayout_81.addWidget(self.min_PasAti)
 
         self.horizontalSpacer_39 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_81.addItem(self.horizontalSpacer_39)
 
-        self.lineEdit_94 = QLineEdit(self.frame_63)
-        self.lineEdit_94.setObjectName(u"lineEdit_94")
-        self.lineEdit_94.setMaximumSize(QSize(70, 16777215))
+        self.max_PasAti = QLineEdit(self.frame_63)
+        self.max_PasAti.setObjectName(u"max_PasAti")
+        self.max_PasAti.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_81.addWidget(self.lineEdit_94)
+        self.horizontalLayout_81.addWidget(self.max_PasAti)
 
 
         self.horizontalLayout_80.addWidget(self.frame_63)
@@ -1372,21 +1372,21 @@ class Ui_Widget(object):
         self.horizontalLayout_85.setSpacing(0)
         self.horizontalLayout_85.setObjectName(u"horizontalLayout_85")
         self.horizontalLayout_85.setContentsMargins(35, 0, 50, 0)
-        self.lineEdit_97 = QLineEdit(self.frame_67)
-        self.lineEdit_97.setObjectName(u"lineEdit_97")
-        self.lineEdit_97.setMaximumSize(QSize(70, 16777215))
+        self.min_CAGRR = QLineEdit(self.frame_67)
+        self.min_CAGRR.setObjectName(u"min_CAGRR")
+        self.min_CAGRR.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_85.addWidget(self.lineEdit_97)
+        self.horizontalLayout_85.addWidget(self.min_CAGRR)
 
         self.horizontalSpacer_41 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_85.addItem(self.horizontalSpacer_41)
 
-        self.lineEdit_98 = QLineEdit(self.frame_67)
-        self.lineEdit_98.setObjectName(u"lineEdit_98")
-        self.lineEdit_98.setMaximumSize(QSize(70, 16777215))
+        self.max_CAGRR = QLineEdit(self.frame_67)
+        self.max_CAGRR.setObjectName(u"max_CAGRR")
+        self.max_CAGRR.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_85.addWidget(self.lineEdit_98)
+        self.horizontalLayout_85.addWidget(self.max_CAGRR)
 
 
         self.horizontalLayout_84.addWidget(self.frame_67)
@@ -1418,21 +1418,21 @@ class Ui_Widget(object):
         self.horizontalLayout_83.setSpacing(0)
         self.horizontalLayout_83.setObjectName(u"horizontalLayout_83")
         self.horizontalLayout_83.setContentsMargins(35, 0, 50, 0)
-        self.lineEdit_95 = QLineEdit(self.frame_65)
-        self.lineEdit_95.setObjectName(u"lineEdit_95")
-        self.lineEdit_95.setMaximumSize(QSize(70, 16777215))
+        self.min_CAGRL = QLineEdit(self.frame_65)
+        self.min_CAGRL.setObjectName(u"min_CAGRL")
+        self.min_CAGRL.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_83.addWidget(self.lineEdit_95)
+        self.horizontalLayout_83.addWidget(self.min_CAGRL)
 
         self.horizontalSpacer_40 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_83.addItem(self.horizontalSpacer_40)
 
-        self.lineEdit_96 = QLineEdit(self.frame_65)
-        self.lineEdit_96.setObjectName(u"lineEdit_96")
-        self.lineEdit_96.setMaximumSize(QSize(70, 16777215))
+        self.max_CAGRL = QLineEdit(self.frame_65)
+        self.max_CAGRL.setObjectName(u"max_CAGRL")
+        self.max_CAGRL.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_83.addWidget(self.lineEdit_96)
+        self.horizontalLayout_83.addWidget(self.max_CAGRL)
 
 
         self.horizontalLayout_82.addWidget(self.frame_65)
@@ -1464,21 +1464,21 @@ class Ui_Widget(object):
         self.horizontalLayout_91.setSpacing(0)
         self.horizontalLayout_91.setObjectName(u"horizontalLayout_91")
         self.horizontalLayout_91.setContentsMargins(35, 0, 50, 0)
-        self.lineEdit_103 = QLineEdit(self.frame_72)
-        self.lineEdit_103.setObjectName(u"lineEdit_103")
-        self.lineEdit_103.setMaximumSize(QSize(70, 16777215))
+        self.min_Liquidez = QLineEdit(self.frame_72)
+        self.min_Liquidez.setObjectName(u"min_Liquidez")
+        self.min_Liquidez.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_91.addWidget(self.lineEdit_103)
+        self.horizontalLayout_91.addWidget(self.min_Liquidez)
 
         self.horizontalSpacer_44 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_91.addItem(self.horizontalSpacer_44)
 
-        self.lineEdit_104 = QLineEdit(self.frame_72)
-        self.lineEdit_104.setObjectName(u"lineEdit_104")
-        self.lineEdit_104.setMaximumSize(QSize(70, 16777215))
+        self.max_Liquidez = QLineEdit(self.frame_72)
+        self.max_Liquidez.setObjectName(u"max_Liquidez")
+        self.max_Liquidez.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_91.addWidget(self.lineEdit_104)
+        self.horizontalLayout_91.addWidget(self.max_Liquidez)
 
 
         self.horizontalLayout_90.addWidget(self.frame_72)
@@ -1510,21 +1510,21 @@ class Ui_Widget(object):
         self.horizontalLayout_89.setSpacing(0)
         self.horizontalLayout_89.setObjectName(u"horizontalLayout_89")
         self.horizontalLayout_89.setContentsMargins(35, 0, 50, 0)
-        self.lineEdit_101 = QLineEdit(self.frame_71)
-        self.lineEdit_101.setObjectName(u"lineEdit_101")
-        self.lineEdit_101.setMaximumSize(QSize(70, 16777215))
+        self.min_PEG = QLineEdit(self.frame_71)
+        self.min_PEG.setObjectName(u"min_PEG")
+        self.min_PEG.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_89.addWidget(self.lineEdit_101)
+        self.horizontalLayout_89.addWidget(self.min_PEG)
 
         self.horizontalSpacer_43 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_89.addItem(self.horizontalSpacer_43)
 
-        self.lineEdit_102 = QLineEdit(self.frame_71)
-        self.lineEdit_102.setObjectName(u"lineEdit_102")
-        self.lineEdit_102.setMaximumSize(QSize(70, 16777215))
+        self.max_PEG = QLineEdit(self.frame_71)
+        self.max_PEG.setObjectName(u"max_PEG")
+        self.max_PEG.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_89.addWidget(self.lineEdit_102)
+        self.horizontalLayout_89.addWidget(self.max_PEG)
 
 
         self.horizontalLayout_88.addWidget(self.frame_71)
@@ -1556,21 +1556,21 @@ class Ui_Widget(object):
         self.horizontalLayout_87.setSpacing(0)
         self.horizontalLayout_87.setObjectName(u"horizontalLayout_87")
         self.horizontalLayout_87.setContentsMargins(35, 0, 50, 0)
-        self.lineEdit_99 = QLineEdit(self.frame_69)
-        self.lineEdit_99.setObjectName(u"lineEdit_99")
-        self.lineEdit_99.setMaximumSize(QSize(70, 16777215))
+        self.min_Valor = QLineEdit(self.frame_69)
+        self.min_Valor.setObjectName(u"min_Valor")
+        self.min_Valor.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_87.addWidget(self.lineEdit_99)
+        self.horizontalLayout_87.addWidget(self.min_Valor)
 
         self.horizontalSpacer_42 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_87.addItem(self.horizontalSpacer_42)
 
-        self.lineEdit_100 = QLineEdit(self.frame_69)
-        self.lineEdit_100.setObjectName(u"lineEdit_100")
-        self.lineEdit_100.setMaximumSize(QSize(70, 16777215))
+        self.max_Valor = QLineEdit(self.frame_69)
+        self.max_Valor.setObjectName(u"max_Valor")
+        self.max_Valor.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_87.addWidget(self.lineEdit_100)
+        self.horizontalLayout_87.addWidget(self.max_Valor)
 
 
         self.horizontalLayout_86.addWidget(self.frame_69)
@@ -1741,29 +1741,29 @@ class Ui_Widget(object):
 
         self.verticalLayout_5.addWidget(self.Fiis_Liquidez)
 
-        self.Fiis_VacF = QCheckBox(self.frame_7)
-        self.Fiis_VacF.setObjectName(u"Fiis_VacF")
-        self.Fiis_VacF.setFont(font2)
-        self.Fiis_VacF.setStyleSheet(u"font: 14pt \"Segoe UI\";")
-        self.Fiis_VacF.setAutoExclusive(False)
+        self.Fiis_Cotas = QCheckBox(self.frame_7)
+        self.Fiis_Cotas.setObjectName(u"Fiis_Cotas")
+        self.Fiis_Cotas.setFont(font2)
+        self.Fiis_Cotas.setStyleSheet(u"font: 14pt \"Segoe UI\";")
+        self.Fiis_Cotas.setAutoExclusive(False)
 
-        self.verticalLayout_5.addWidget(self.Fiis_VacF)
+        self.verticalLayout_5.addWidget(self.Fiis_Cotas)
 
-        self.Fiis_VacF_2 = QCheckBox(self.frame_7)
-        self.Fiis_VacF_2.setObjectName(u"Fiis_VacF_2")
-        self.Fiis_VacF_2.setFont(font2)
-        self.Fiis_VacF_2.setStyleSheet(u"font: 14pt \"Segoe UI\";")
-        self.Fiis_VacF_2.setAutoExclusive(False)
+        self.Fiis_Dividendo = QCheckBox(self.frame_7)
+        self.Fiis_Dividendo.setObjectName(u"Fiis_Dividendo")
+        self.Fiis_Dividendo.setFont(font2)
+        self.Fiis_Dividendo.setStyleSheet(u"font: 14pt \"Segoe UI\";")
+        self.Fiis_Dividendo.setAutoExclusive(False)
 
-        self.verticalLayout_5.addWidget(self.Fiis_VacF_2)
+        self.verticalLayout_5.addWidget(self.Fiis_Dividendo)
 
-        self.Fiis_DY3 = QCheckBox(self.frame_7)
-        self.Fiis_DY3.setObjectName(u"Fiis_DY3")
-        self.Fiis_DY3.setFont(font2)
-        self.Fiis_DY3.setStyleSheet(u"font: 14pt \"Segoe UI\";")
-        self.Fiis_DY3.setAutoExclusive(False)
+        self.Fiis_CAGR = QCheckBox(self.frame_7)
+        self.Fiis_CAGR.setObjectName(u"Fiis_CAGR")
+        self.Fiis_CAGR.setFont(font2)
+        self.Fiis_CAGR.setStyleSheet(u"font: 14pt \"Segoe UI\";")
+        self.Fiis_CAGR.setAutoExclusive(False)
 
-        self.verticalLayout_5.addWidget(self.Fiis_DY3)
+        self.verticalLayout_5.addWidget(self.Fiis_CAGR)
 
         self.Fiis_Valor = QCheckBox(self.frame_7)
         self.Fiis_Valor.setObjectName(u"Fiis_Valor")
@@ -1939,73 +1939,27 @@ class Ui_Widget(object):
         self.horizontalLayout_95.setSpacing(0)
         self.horizontalLayout_95.setObjectName(u"horizontalLayout_95")
         self.horizontalLayout_95.setContentsMargins(35, 0, 50, 0)
-        self.lineEdit_107 = QLineEdit(self.frame_76)
-        self.lineEdit_107.setObjectName(u"lineEdit_107")
-        self.lineEdit_107.setMaximumSize(QSize(70, 16777215))
+        self.min_Fiis_DY = QLineEdit(self.frame_76)
+        self.min_Fiis_DY.setObjectName(u"min_Fiis_DY")
+        self.min_Fiis_DY.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_95.addWidget(self.lineEdit_107)
+        self.horizontalLayout_95.addWidget(self.min_Fiis_DY)
 
         self.horizontalSpacer_12 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_95.addItem(self.horizontalSpacer_12)
 
-        self.lineEdit_108 = QLineEdit(self.frame_76)
-        self.lineEdit_108.setObjectName(u"lineEdit_108")
-        self.lineEdit_108.setMaximumSize(QSize(70, 16777215))
+        self.max_Fiis_DY = QLineEdit(self.frame_76)
+        self.max_Fiis_DY.setObjectName(u"max_Fiis_DY")
+        self.max_Fiis_DY.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_95.addWidget(self.lineEdit_108)
+        self.horizontalLayout_95.addWidget(self.max_Fiis_DY)
 
 
         self.horizontalLayout_23.addWidget(self.frame_76)
 
 
         self.verticalLayout_22.addWidget(self.fFiis_DY)
-
-        self.fFiis_DY3 = QFrame(self.InformationFrame_7)
-        self.fFiis_DY3.setObjectName(u"fFiis_DY3")
-        self.fFiis_DY3.setFrameShape(QFrame.StyledPanel)
-        self.fFiis_DY3.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_96 = QHBoxLayout(self.fFiis_DY3)
-        self.horizontalLayout_96.setObjectName(u"horizontalLayout_96")
-        self.horizontalLayout_96.setContentsMargins(30, 0, -1, 0)
-        self.label_60 = QLabel(self.fFiis_DY3)
-        self.label_60.setObjectName(u"label_60")
-        self.label_60.setMinimumSize(QSize(185, 0))
-        self.label_60.setMaximumSize(QSize(185, 150))
-        self.label_60.setStyleSheet(u"font: 14pt \"Segoe UI\";")
-        self.label_60.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
-
-        self.horizontalLayout_96.addWidget(self.label_60)
-
-        self.frame_78 = QFrame(self.fFiis_DY3)
-        self.frame_78.setObjectName(u"frame_78")
-        self.frame_78.setFrameShape(QFrame.StyledPanel)
-        self.frame_78.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_97 = QHBoxLayout(self.frame_78)
-        self.horizontalLayout_97.setSpacing(0)
-        self.horizontalLayout_97.setObjectName(u"horizontalLayout_97")
-        self.horizontalLayout_97.setContentsMargins(35, 0, 50, 0)
-        self.lineEdit_109 = QLineEdit(self.frame_78)
-        self.lineEdit_109.setObjectName(u"lineEdit_109")
-        self.lineEdit_109.setMaximumSize(QSize(70, 16777215))
-
-        self.horizontalLayout_97.addWidget(self.lineEdit_109)
-
-        self.horizontalSpacer_46 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
-
-        self.horizontalLayout_97.addItem(self.horizontalSpacer_46)
-
-        self.lineEdit_110 = QLineEdit(self.frame_78)
-        self.lineEdit_110.setObjectName(u"lineEdit_110")
-        self.lineEdit_110.setMaximumSize(QSize(70, 16777215))
-
-        self.horizontalLayout_97.addWidget(self.lineEdit_110)
-
-
-        self.horizontalLayout_96.addWidget(self.frame_78)
-
-
-        self.verticalLayout_22.addWidget(self.fFiis_DY3)
 
         self.fFiis_PVP = QFrame(self.InformationFrame_7)
         self.fFiis_PVP.setObjectName(u"fFiis_PVP")
@@ -2031,21 +1985,21 @@ class Ui_Widget(object):
         self.horizontalLayout_99.setSpacing(0)
         self.horizontalLayout_99.setObjectName(u"horizontalLayout_99")
         self.horizontalLayout_99.setContentsMargins(35, 0, 50, 0)
-        self.lineEdit_111 = QLineEdit(self.frame_80)
-        self.lineEdit_111.setObjectName(u"lineEdit_111")
-        self.lineEdit_111.setMaximumSize(QSize(70, 16777215))
+        self.min_Fiis_PVP = QLineEdit(self.frame_80)
+        self.min_Fiis_PVP.setObjectName(u"min_Fiis_PVP")
+        self.min_Fiis_PVP.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_99.addWidget(self.lineEdit_111)
+        self.horizontalLayout_99.addWidget(self.min_Fiis_PVP)
 
         self.horizontalSpacer_47 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_99.addItem(self.horizontalSpacer_47)
 
-        self.lineEdit_112 = QLineEdit(self.frame_80)
-        self.lineEdit_112.setObjectName(u"lineEdit_112")
-        self.lineEdit_112.setMaximumSize(QSize(70, 16777215))
+        self.max_Fiis_PVP = QLineEdit(self.frame_80)
+        self.max_Fiis_PVP.setObjectName(u"max_Fiis_PVP")
+        self.max_Fiis_PVP.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_99.addWidget(self.lineEdit_112)
+        self.horizontalLayout_99.addWidget(self.max_Fiis_PVP)
 
 
         self.horizontalLayout_98.addWidget(self.frame_80)
@@ -2077,21 +2031,21 @@ class Ui_Widget(object):
         self.horizontalLayout_101.setSpacing(0)
         self.horizontalLayout_101.setObjectName(u"horizontalLayout_101")
         self.horizontalLayout_101.setContentsMargins(35, 0, 50, 0)
-        self.lineEdit_113 = QLineEdit(self.frame_82)
-        self.lineEdit_113.setObjectName(u"lineEdit_113")
-        self.lineEdit_113.setMaximumSize(QSize(70, 16777215))
+        self.min_Fiis_DY_CAGR = QLineEdit(self.frame_82)
+        self.min_Fiis_DY_CAGR.setObjectName(u"min_Fiis_DY_CAGR")
+        self.min_Fiis_DY_CAGR.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_101.addWidget(self.lineEdit_113)
+        self.horizontalLayout_101.addWidget(self.min_Fiis_DY_CAGR)
 
         self.horizontalSpacer_48 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_101.addItem(self.horizontalSpacer_48)
 
-        self.lineEdit_114 = QLineEdit(self.frame_82)
-        self.lineEdit_114.setObjectName(u"lineEdit_114")
-        self.lineEdit_114.setMaximumSize(QSize(70, 16777215))
+        self.max_Fiis_DY_CAGR = QLineEdit(self.frame_82)
+        self.max_Fiis_DY_CAGR.setObjectName(u"max_Fiis_DY_CAGR")
+        self.max_Fiis_DY_CAGR.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_101.addWidget(self.lineEdit_114)
+        self.horizontalLayout_101.addWidget(self.max_Fiis_DY_CAGR)
 
 
         self.horizontalLayout_100.addWidget(self.frame_82)
@@ -2099,14 +2053,14 @@ class Ui_Widget(object):
 
         self.verticalLayout_22.addWidget(self.fFiis_DY_CAGR)
 
-        self.fFiis_VacF = QFrame(self.InformationFrame_7)
-        self.fFiis_VacF.setObjectName(u"fFiis_VacF")
-        self.fFiis_VacF.setFrameShape(QFrame.StyledPanel)
-        self.fFiis_VacF.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_104 = QHBoxLayout(self.fFiis_VacF)
+        self.fFiis_Dividendo = QFrame(self.InformationFrame_7)
+        self.fFiis_Dividendo.setObjectName(u"fFiis_Dividendo")
+        self.fFiis_Dividendo.setFrameShape(QFrame.StyledPanel)
+        self.fFiis_Dividendo.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_104 = QHBoxLayout(self.fFiis_Dividendo)
         self.horizontalLayout_104.setObjectName(u"horizontalLayout_104")
         self.horizontalLayout_104.setContentsMargins(30, 0, -1, 0)
-        self.label_67 = QLabel(self.fFiis_VacF)
+        self.label_67 = QLabel(self.fFiis_Dividendo)
         self.label_67.setObjectName(u"label_67")
         self.label_67.setMinimumSize(QSize(185, 0))
         self.label_67.setMaximumSize(QSize(185, 150))
@@ -2115,7 +2069,7 @@ class Ui_Widget(object):
 
         self.horizontalLayout_104.addWidget(self.label_67)
 
-        self.frame_86 = QFrame(self.fFiis_VacF)
+        self.frame_86 = QFrame(self.fFiis_Dividendo)
         self.frame_86.setObjectName(u"frame_86")
         self.frame_86.setFrameShape(QFrame.StyledPanel)
         self.frame_86.setFrameShadow(QFrame.Raised)
@@ -2123,36 +2077,36 @@ class Ui_Widget(object):
         self.horizontalLayout_105.setSpacing(0)
         self.horizontalLayout_105.setObjectName(u"horizontalLayout_105")
         self.horizontalLayout_105.setContentsMargins(35, 0, 50, 0)
-        self.lineEdit_117 = QLineEdit(self.frame_86)
-        self.lineEdit_117.setObjectName(u"lineEdit_117")
-        self.lineEdit_117.setMaximumSize(QSize(70, 16777215))
+        self.min_Fiis_Dividendo = QLineEdit(self.frame_86)
+        self.min_Fiis_Dividendo.setObjectName(u"min_Fiis_Dividendo")
+        self.min_Fiis_Dividendo.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_105.addWidget(self.lineEdit_117)
+        self.horizontalLayout_105.addWidget(self.min_Fiis_Dividendo)
 
         self.horizontalSpacer_50 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_105.addItem(self.horizontalSpacer_50)
 
-        self.lineEdit_118 = QLineEdit(self.frame_86)
-        self.lineEdit_118.setObjectName(u"lineEdit_118")
-        self.lineEdit_118.setMaximumSize(QSize(70, 16777215))
+        self.max_Fiis_Dividendo = QLineEdit(self.frame_86)
+        self.max_Fiis_Dividendo.setObjectName(u"max_Fiis_Dividendo")
+        self.max_Fiis_Dividendo.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_105.addWidget(self.lineEdit_118)
+        self.horizontalLayout_105.addWidget(self.max_Fiis_Dividendo)
 
 
         self.horizontalLayout_104.addWidget(self.frame_86)
 
 
-        self.verticalLayout_22.addWidget(self.fFiis_VacF)
+        self.verticalLayout_22.addWidget(self.fFiis_Dividendo)
 
-        self.fFiis_VacF_2 = QFrame(self.InformationFrame_7)
-        self.fFiis_VacF_2.setObjectName(u"fFiis_VacF_2")
-        self.fFiis_VacF_2.setFrameShape(QFrame.StyledPanel)
-        self.fFiis_VacF_2.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_106 = QHBoxLayout(self.fFiis_VacF_2)
+        self.fFiis_CAGR = QFrame(self.InformationFrame_7)
+        self.fFiis_CAGR.setObjectName(u"fFiis_CAGR")
+        self.fFiis_CAGR.setFrameShape(QFrame.StyledPanel)
+        self.fFiis_CAGR.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_106 = QHBoxLayout(self.fFiis_CAGR)
         self.horizontalLayout_106.setObjectName(u"horizontalLayout_106")
         self.horizontalLayout_106.setContentsMargins(30, 0, -1, 0)
-        self.label_70 = QLabel(self.fFiis_VacF_2)
+        self.label_70 = QLabel(self.fFiis_CAGR)
         self.label_70.setObjectName(u"label_70")
         self.label_70.setMinimumSize(QSize(185, 0))
         self.label_70.setMaximumSize(QSize(185, 150))
@@ -2161,7 +2115,7 @@ class Ui_Widget(object):
 
         self.horizontalLayout_106.addWidget(self.label_70)
 
-        self.frame_88 = QFrame(self.fFiis_VacF_2)
+        self.frame_88 = QFrame(self.fFiis_CAGR)
         self.frame_88.setObjectName(u"frame_88")
         self.frame_88.setFrameShape(QFrame.StyledPanel)
         self.frame_88.setFrameShadow(QFrame.Raised)
@@ -2169,27 +2123,27 @@ class Ui_Widget(object):
         self.horizontalLayout_107.setSpacing(0)
         self.horizontalLayout_107.setObjectName(u"horizontalLayout_107")
         self.horizontalLayout_107.setContentsMargins(35, 0, 50, 0)
-        self.lineEdit_119 = QLineEdit(self.frame_88)
-        self.lineEdit_119.setObjectName(u"lineEdit_119")
-        self.lineEdit_119.setMaximumSize(QSize(70, 16777215))
+        self.min_Fiis_CAGR = QLineEdit(self.frame_88)
+        self.min_Fiis_CAGR.setObjectName(u"min_Fiis_CAGR")
+        self.min_Fiis_CAGR.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_107.addWidget(self.lineEdit_119)
+        self.horizontalLayout_107.addWidget(self.min_Fiis_CAGR)
 
         self.horizontalSpacer_51 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_107.addItem(self.horizontalSpacer_51)
 
-        self.lineEdit_120 = QLineEdit(self.frame_88)
-        self.lineEdit_120.setObjectName(u"lineEdit_120")
-        self.lineEdit_120.setMaximumSize(QSize(70, 16777215))
+        self.max_Fiis_CAGR = QLineEdit(self.frame_88)
+        self.max_Fiis_CAGR.setObjectName(u"max_Fiis_CAGR")
+        self.max_Fiis_CAGR.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_107.addWidget(self.lineEdit_120)
+        self.horizontalLayout_107.addWidget(self.max_Fiis_CAGR)
 
 
         self.horizontalLayout_106.addWidget(self.frame_88)
 
 
-        self.verticalLayout_22.addWidget(self.fFiis_VacF_2)
+        self.verticalLayout_22.addWidget(self.fFiis_CAGR)
 
         self.fFiis_Liquidez = QFrame(self.InformationFrame_7)
         self.fFiis_Liquidez.setObjectName(u"fFiis_Liquidez")
@@ -2215,27 +2169,73 @@ class Ui_Widget(object):
         self.horizontalLayout_125.setSpacing(0)
         self.horizontalLayout_125.setObjectName(u"horizontalLayout_125")
         self.horizontalLayout_125.setContentsMargins(35, 0, 50, 0)
-        self.lineEdit_137 = QLineEdit(self.frame_106)
-        self.lineEdit_137.setObjectName(u"lineEdit_137")
-        self.lineEdit_137.setMaximumSize(QSize(70, 16777215))
+        self.min_Fiis_Liquidez = QLineEdit(self.frame_106)
+        self.min_Fiis_Liquidez.setObjectName(u"min_Fiis_Liquidez")
+        self.min_Fiis_Liquidez.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_125.addWidget(self.lineEdit_137)
+        self.horizontalLayout_125.addWidget(self.min_Fiis_Liquidez)
 
         self.horizontalSpacer_60 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_125.addItem(self.horizontalSpacer_60)
 
-        self.lineEdit_138 = QLineEdit(self.frame_106)
-        self.lineEdit_138.setObjectName(u"lineEdit_138")
-        self.lineEdit_138.setMaximumSize(QSize(70, 16777215))
+        self.max_Fiis_Liquidez = QLineEdit(self.frame_106)
+        self.max_Fiis_Liquidez.setObjectName(u"max_Fiis_Liquidez")
+        self.max_Fiis_Liquidez.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_125.addWidget(self.lineEdit_138)
+        self.horizontalLayout_125.addWidget(self.max_Fiis_Liquidez)
 
 
         self.horizontalLayout_124.addWidget(self.frame_106)
 
 
         self.verticalLayout_22.addWidget(self.fFiis_Liquidez)
+
+        self.fFiis_Cotas = QFrame(self.InformationFrame_7)
+        self.fFiis_Cotas.setObjectName(u"fFiis_Cotas")
+        self.fFiis_Cotas.setFrameShape(QFrame.StyledPanel)
+        self.fFiis_Cotas.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_96 = QHBoxLayout(self.fFiis_Cotas)
+        self.horizontalLayout_96.setObjectName(u"horizontalLayout_96")
+        self.horizontalLayout_96.setContentsMargins(30, 0, -1, 0)
+        self.label_60 = QLabel(self.fFiis_Cotas)
+        self.label_60.setObjectName(u"label_60")
+        self.label_60.setMinimumSize(QSize(185, 0))
+        self.label_60.setMaximumSize(QSize(185, 150))
+        self.label_60.setStyleSheet(u"font: 14pt \"Segoe UI\";")
+        self.label_60.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.horizontalLayout_96.addWidget(self.label_60)
+
+        self.frame_78 = QFrame(self.fFiis_Cotas)
+        self.frame_78.setObjectName(u"frame_78")
+        self.frame_78.setFrameShape(QFrame.StyledPanel)
+        self.frame_78.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_97 = QHBoxLayout(self.frame_78)
+        self.horizontalLayout_97.setSpacing(0)
+        self.horizontalLayout_97.setObjectName(u"horizontalLayout_97")
+        self.horizontalLayout_97.setContentsMargins(35, 0, 50, 0)
+        self.min_Fiis_Cotas = QLineEdit(self.frame_78)
+        self.min_Fiis_Cotas.setObjectName(u"min_Fiis_Cotas")
+        self.min_Fiis_Cotas.setMaximumSize(QSize(70, 16777215))
+
+        self.horizontalLayout_97.addWidget(self.min_Fiis_Cotas)
+
+        self.horizontalSpacer_46 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_97.addItem(self.horizontalSpacer_46)
+
+        self.max_Fiis_Cotas = QLineEdit(self.frame_78)
+        self.max_Fiis_Cotas.setObjectName(u"max_Fiis_Cotas")
+        self.max_Fiis_Cotas.setMaximumSize(QSize(70, 16777215))
+
+        self.horizontalLayout_97.addWidget(self.max_Fiis_Cotas)
+
+
+        self.horizontalLayout_96.addWidget(self.frame_78)
+
+
+        self.verticalLayout_22.addWidget(self.fFiis_Cotas)
 
         self.fFiis_Valor = QFrame(self.InformationFrame_7)
         self.fFiis_Valor.setObjectName(u"fFiis_Valor")
@@ -2261,21 +2261,21 @@ class Ui_Widget(object):
         self.horizontalLayout_129.setSpacing(0)
         self.horizontalLayout_129.setObjectName(u"horizontalLayout_129")
         self.horizontalLayout_129.setContentsMargins(35, 0, 50, 0)
-        self.lineEdit_141 = QLineEdit(self.frame_110)
-        self.lineEdit_141.setObjectName(u"lineEdit_141")
-        self.lineEdit_141.setMaximumSize(QSize(70, 16777215))
+        self.min_Fiis_Valor = QLineEdit(self.frame_110)
+        self.min_Fiis_Valor.setObjectName(u"min_Fiis_Valor")
+        self.min_Fiis_Valor.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_129.addWidget(self.lineEdit_141)
+        self.horizontalLayout_129.addWidget(self.min_Fiis_Valor)
 
         self.horizontalSpacer_62 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_129.addItem(self.horizontalSpacer_62)
 
-        self.lineEdit_142 = QLineEdit(self.frame_110)
-        self.lineEdit_142.setObjectName(u"lineEdit_142")
-        self.lineEdit_142.setMaximumSize(QSize(70, 16777215))
+        self.max_Fiis_Valor = QLineEdit(self.frame_110)
+        self.max_Fiis_Valor.setObjectName(u"max_Fiis_Valor")
+        self.max_Fiis_Valor.setMaximumSize(QSize(70, 16777215))
 
-        self.horizontalLayout_129.addWidget(self.lineEdit_142)
+        self.horizontalLayout_129.addWidget(self.max_Fiis_Valor)
 
 
         self.horizontalLayout_128.addWidget(self.frame_110)
@@ -2476,7 +2476,7 @@ class Ui_Widget(object):
 
         self.retranslateUi(Widget)
 
-        self.stackedWidget.setCurrentIndex(4)
+        self.stackedWidget.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(Widget)
@@ -2517,8 +2517,8 @@ class Ui_Widget(object):
         self.Valor.setText(QCoreApplication.translate("Widget", u"Valor de Mercado", None))
         self.stocksOptions.setText(QCoreApplication.translate("Widget", u"Seguinte", None))
         self.label_68.setText(QCoreApplication.translate("Widget", u"Filtros", None))
-        self.label_2.setText(QCoreApplication.translate("Widget", u"M\u00e1ximo", None))
-        self.label_3.setText(QCoreApplication.translate("Widget", u"M\u00ednimo", None))
+        self.label_2.setText(QCoreApplication.translate("Widget", u"M\u00ednimo", None))
+        self.label_3.setText(QCoreApplication.translate("Widget", u"M\u00e1ximo", None))
         self.label_24.setText(QCoreApplication.translate("Widget", u"DY", None))
         self.label_42.setText(QCoreApplication.translate("Widget", u"P/L", None))
         self.label_43.setText(QCoreApplication.translate("Widget", u"P/VP", None))
@@ -2543,21 +2543,21 @@ class Ui_Widget(object):
         self.Fiis_DY_CAGR.setText(QCoreApplication.translate("Widget", u"DY CAGR 3 Anos", None))
         self.Fiis_PVP.setText(QCoreApplication.translate("Widget", u"P/VP", None))
         self.Fiis_Liquidez.setText(QCoreApplication.translate("Widget", u"Liquidez Di\u00e1ria", None))
-        self.Fiis_VacF.setText(QCoreApplication.translate("Widget", u"Vac\u00e2ncia F\u00edsica", None))
-        self.Fiis_VacF_2.setText(QCoreApplication.translate("Widget", u"Vac\u00e2ncia Financeira", None))
-        self.Fiis_DY3.setText(QCoreApplication.translate("Widget", u"DY dos \u00faltimos 3 anos", None))
+        self.Fiis_Cotas.setText(QCoreApplication.translate("Widget", u"Cotas", None))
+        self.Fiis_Dividendo.setText(QCoreApplication.translate("Widget", u"Dividendo", None))
+        self.Fiis_CAGR.setText(QCoreApplication.translate("Widget", u"CAGR (3 Anos)", None))
         self.Fiis_Valor.setText(QCoreApplication.translate("Widget", u"Valor Patrimonial", None))
         self.fiisOptions.setText(QCoreApplication.translate("Widget", u"Seguinte", None))
         self.label_69.setText(QCoreApplication.translate("Widget", u"Filtros", None))
-        self.label_4.setText(QCoreApplication.translate("Widget", u"M\u00e1ximo", None))
-        self.label_5.setText(QCoreApplication.translate("Widget", u"M\u00ednimo", None))
+        self.label_4.setText(QCoreApplication.translate("Widget", u"M\u00ednimo", None))
+        self.label_5.setText(QCoreApplication.translate("Widget", u"M\u00e1ximo", None))
         self.fDY_2.setText(QCoreApplication.translate("Widget", u"DY", None))
-        self.label_60.setText(QCoreApplication.translate("Widget", u"DY dos \u00faltimos 3 anos", None))
         self.label_61.setText(QCoreApplication.translate("Widget", u"P/VP", None))
         self.label_62.setText(QCoreApplication.translate("Widget", u"DY CAGR 3 Anos", None))
-        self.label_67.setText(QCoreApplication.translate("Widget", u"Vac\u00e2ncia F\u00edsica", None))
-        self.label_70.setText(QCoreApplication.translate("Widget", u"Vac\u00e2ncia Financeira", None))
+        self.label_67.setText(QCoreApplication.translate("Widget", u"\u00daltimo Dividendo", None))
+        self.label_70.setText(QCoreApplication.translate("Widget", u"CAGR (3 Anos)", None))
         self.label_79.setText(QCoreApplication.translate("Widget", u"Liquidez Di\u00e1ria", None))
+        self.label_60.setText(QCoreApplication.translate("Widget", u"N\u00famero de Cotas", None))
         self.label_81.setText(QCoreApplication.translate("Widget", u"Valor Patrimonial", None))
         self.fiisFilters.setText(QCoreApplication.translate("Widget", u"Seguinte", None))
         self.label_71.setText(QCoreApplication.translate("Widget", u"Planilha Atualizada com Sucesso!!", None))

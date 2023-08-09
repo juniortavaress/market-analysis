@@ -12,11 +12,9 @@ This project provides a Python-based tool for simplified filtering of stocks and
 
 ## Usage
 
-1. Clone the repository to your local machine.
-2. Install the necessary dependencies using the provided `requirements.txt` file.
-3. Run the program by executing `main.py`.
-4. Follow the on-screen prompts to select filtering options and generate the refined list of assets.
-5. When prompted, enter the directory of your computer's downloads folder. Make sure to follow the slash pattern as in `D:\User\Downloads\`.
+1. Download the executable file (Market Analysis.exe).
+2. Run the executable file.
+3. When prompted, enter the directory of your computer's downloads folder. Make sure to follow the slash pattern as in `D:\User\Downloads\`.
 
 ## Note
 
@@ -41,15 +39,11 @@ Este projeto fornece uma ferramenta baseada em Python para filtragem simplificad
 
 ## Uso
 
-1. Clone o repositório para sua máquina local.
-2. Instale as dependências necessárias usando o arquivo `requirements.txt` fornecido.
-3. Execute o programa rodando o arquivo `main.py`.
-4. Siga as instruções na tela para selecionar opções de filtragem e gerar a lista refinada de ativos.
-5. Quando solicitado, insira o diretório da sua pasta downloads do computador. Certifique-se de seguir o padrão de barras como em `D:\User\Downloads\`.
-
-
-## Observação
+1. Baixe o arquivo executável (Market Analysis.exe).
+2. Abra o arquivo no seu computador.
+3. Quando solicitado, insira o diretório da sua pasta downloads do computador. Certifique-se de seguir o padrão de barras como em `D:\User\Downloads\`.
 
 ## Observação
 
 Os resultados fornecidos por esta ferramenta servem como ponto de partida e não devem ser interpretados como recomendações de investimento. A decisão final deve ser baseada em uma análise qualitativa e quantitativa abrangente, levando em consideração fatores como a posição competitiva das empresas e suas perspectivas futuras.
+

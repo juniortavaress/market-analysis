@@ -16,6 +16,7 @@ This project provides a Python-based tool for simplified filtering of stocks and
 2. Install the necessary dependencies using the provided `requirements.txt` file.
 3. Run the program by executing `main.py`.
 4. Follow the on-screen prompts to select filtering options and generate the refined list of assets.
+5. When prompted, enter the directory of your computer's downloads folder. Make sure to follow the slash pattern as in `D:\User\Downloads\`.
 
 ## Note
 
@@ -44,6 +45,8 @@ Este projeto fornece uma ferramenta baseada em Python para filtragem simplificad
 2. Instale as dependências necessárias usando o arquivo `requirements.txt` fornecido.
 3. Execute o programa rodando o arquivo `main.py`.
 4. Siga as instruções na tela para selecionar opções de filtragem e gerar a lista refinada de ativos.
+5. Quando solicitado, insira o diretório da sua pasta downloads do computador. Certifique-se de seguir o padrão de barras como em `D:\User\Downloads\`.
+
 
 ## Observação
 

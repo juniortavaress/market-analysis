@@ -14,6 +14,7 @@ This project provides a Python-based tool for simplified filtering of stocks and
 
 1. Download the executable file (Market Analysis.exe).
 2. Run the executable file.
+3. When prompted, enter the directory of your computer's downloads folder. Make sure to follow the slash pattern as in `D:\User\Downloads\`.
 
 ## Note
 
@@ -40,6 +41,7 @@ Este projeto fornece uma ferramenta baseada em Python para filtragem simplificad
 
 1. Baixe o arquivo executável (Market Analysis.exe).
 2. Abra o arquivo no seu computador.
+3. Quando solicitado, insira o diretório da sua pasta downloads do computador. Certifique-se de seguir o padrão de barras como em `D:\User\Downloads\`.
 
 ## Observação
 

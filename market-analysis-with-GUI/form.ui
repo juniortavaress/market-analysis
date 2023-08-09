@@ -6,12 +6,16 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1584</width>
-    <height>1056</height>
+    <width>1206</width>
+    <height>770</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Market Analysis and Filtering</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="images.qrc">
+    <normaloff>:/img/assets/trend.png</normaloff>:/img/assets/trend.png</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(175, 175, 175);</string>
@@ -34,6 +38,9 @@
    </property>
    <item>
     <widget class="QStackedWidget" name="stackedWidget">
+     <property name="focusPolicy">
+      <enum>Qt::StrongFocus</enum>
+     </property>
      <property name="currentIndex">
       <number>0</number>
      </property>
@@ -329,6 +336,9 @@ QCheckBox::indicator:checked{
                        <bold>false</bold>
                       </font>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
                      </property>
@@ -355,6 +365,9 @@ QCheckBox::indicator:checked{
                        <italic>false</italic>
                        <bold>false</bold>
                       </font>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
                      </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
@@ -469,6 +482,9 @@ QCheckBox::indicator:checked{
                        <bold>false</bold>
                       </font>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
                      </property>
@@ -495,6 +511,9 @@ QCheckBox::indicator:checked{
                        <italic>false</italic>
                        <bold>false</bold>
                       </font>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
                      </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
@@ -582,6 +601,9 @@ QCheckBox::indicator:checked{
                        <width>250</width>
                        <height>25</height>
                       </size>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
                      </property>
                      <property name="styleSheet">
                       <string notr="true">background: #5E5E5E;
@@ -678,6 +700,9 @@ padding-top:8px;
                     <height>50</height>
                    </size>
                   </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
                   <property name="styleSheet">
                    <string notr="true">QPushButton {
 	background-color: rgb(69, 118, 178);
@@ -724,10 +749,267 @@ QPushButton:pressed {
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="loadingPage">
+     <widget class="QWidget" name="loadingAndErrorPage">
       <layout class="QHBoxLayout" name="horizontalLayout_26">
        <item>
+        <widget class="QFrame" name="frame_13">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_27">
+          <item>
+           <widget class="QFrame" name="frame_22">
+            <property name="minimumSize">
+             <size>
+              <width>600</width>
+              <height>300</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>600</width>
+              <height>300</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(217, 217, 217);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_23">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QFrame" name="frame_23">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>90</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_103">
+                <item>
+                 <widget class="QLabel" name="label_73">
+                  <property name="font">
+                   <font>
+                    <pointsize>25</pointsize>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Algum erro inesperado aconteceu!!</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_17">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QFrame" name="InformationFrame_8">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_24">
+                <item>
+                 <widget class="QLabel" name="label_18">
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>11</pointsize>
+                    <italic>false</italic>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="text">
+                   <string>Tente novamente mais tarde!</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_18">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>30</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QFrame" name="ButtonFrame_8">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>80</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: qlineargradient(spread:pad, x1:0.5, y1:0.5, x2:0.5, y2:1, stop:0.2746 rgba(217, 217, 217, 255), stop:0.287185 rgba(175, 175, 175, 255));
+padding-top:8px;
+
+</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::NoFrame</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_112">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <spacer name="horizontalSpacer_16">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="end_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>185</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>185</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+	background-color: rgb(69, 118, 178);
+	color: rgb(255, 255, 255);
+	font: 22pt &quot;Arial&quot;;
+	border-radius: 10px;
+}
+
+QPushButton:hover {
+	border: 3px solid rgba(0, 170, 255, 0.71);
+}
+
+QPushButton:pressed {
+	border: 3px solid rgba(0, 170, 255, 0.71);
+    background-color:rgb(98, 168, 254);
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Início</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_52">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
         <widget class="QFrame" name="frame2">
+         <property name="minimumSize">
+          <size>
+           <width>110</width>
+           <height>110</height>
+          </size>
+         </property>
          <property name="maximumSize">
           <size>
            <width>110</width>
@@ -851,11 +1133,11 @@ QPushButton:pressed {
 	border: 1px solid rgba(0, 170, 255, 0.71);
 	height: 20px;
 	width: 20px;
-
+	border-radius: 5px;
 }
 
 QCheckBox::indicator:checked{
-	background: rgba(50, 170, 255, 0.58);
+	background-color: rgb(69, 118, 178);
 	height: 20px;
 	width: 20px;
 }
@@ -909,6 +1191,9 @@ QCheckBox::indicator:checked{
                        <bold>false</bold>
                       </font>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
                      </property>
@@ -936,6 +1221,9 @@ QCheckBox::indicator:checked{
                        <bold>false</bold>
                       </font>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
                      </property>
@@ -956,6 +1244,9 @@ QCheckBox::indicator:checked{
                        <italic>false</italic>
                        <bold>false</bold>
                       </font>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
                      </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
@@ -978,6 +1269,9 @@ QCheckBox::indicator:checked{
                        <bold>false</bold>
                       </font>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
                      </property>
@@ -998,6 +1292,9 @@ QCheckBox::indicator:checked{
                        <italic>false</italic>
                        <bold>false</bold>
                       </font>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
                      </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
@@ -1020,6 +1317,9 @@ QCheckBox::indicator:checked{
                        <bold>false</bold>
                       </font>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
                      </property>
@@ -1040,6 +1340,9 @@ QCheckBox::indicator:checked{
                        <italic>false</italic>
                        <bold>false</bold>
                       </font>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
                      </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
@@ -1062,6 +1365,9 @@ QCheckBox::indicator:checked{
                        <bold>false</bold>
                       </font>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
                      </property>
@@ -1082,6 +1388,9 @@ QCheckBox::indicator:checked{
                        <italic>false</italic>
                        <bold>false</bold>
                       </font>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
                      </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
@@ -1122,6 +1431,9 @@ QCheckBox::indicator:checked{
                        <bold>false</bold>
                       </font>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
                      </property>
@@ -1149,6 +1461,9 @@ QCheckBox::indicator:checked{
                        <bold>false</bold>
                       </font>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
                      </property>
@@ -1169,6 +1484,9 @@ QCheckBox::indicator:checked{
                        <italic>false</italic>
                        <bold>false</bold>
                       </font>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
                      </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
@@ -1191,6 +1509,9 @@ QCheckBox::indicator:checked{
                        <bold>false</bold>
                       </font>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
                      </property>
@@ -1211,6 +1532,9 @@ QCheckBox::indicator:checked{
                        <italic>false</italic>
                        <bold>false</bold>
                       </font>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
                      </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
@@ -1233,6 +1557,9 @@ QCheckBox::indicator:checked{
                        <bold>false</bold>
                       </font>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
                      </property>
@@ -1253,6 +1580,9 @@ QCheckBox::indicator:checked{
                        <italic>false</italic>
                        <bold>false</bold>
                       </font>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
                      </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
@@ -1275,6 +1605,9 @@ QCheckBox::indicator:checked{
                        <bold>false</bold>
                       </font>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
                      </property>
@@ -1295,6 +1628,9 @@ QCheckBox::indicator:checked{
                        <italic>false</italic>
                        <bold>false</bold>
                       </font>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
                      </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
@@ -1394,6 +1730,9 @@ padding-top:8px;
                  <width>185</width>
                  <height>50</height>
                 </size>
+               </property>
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
                </property>
                <property name="styleSheet">
                 <string notr="true">QPushButton {
@@ -1624,6 +1963,25 @@ QPushButton:pressed {
           </item>
           <item>
            <widget class="QFrame" name="InformationFrame_6">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+    background-color: rgb(217, 217, 217);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0px;
+    font-size: 14px;
+    color: #333;
+}
+
+QLineEdit:focus {
+    background-color: rgb(217, 217, 217);
+    border: 1px solid #66afe9;
+    outline: none;
+}</string>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -1706,6 +2064,18 @@ QPushButton:pressed {
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
+                     </property>
                     </widget>
                    </item>
                    <item>
@@ -1731,6 +2101,15 @@ QPushButton:pressed {
                        <width>70</width>
                        <height>16777215</height>
                       </size>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
                      </property>
                     </widget>
                    </item>
@@ -1815,6 +2194,15 @@ QPushButton:pressed {
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
+                     </property>
                     </widget>
                    </item>
                    <item>
@@ -1840,6 +2228,15 @@ QPushButton:pressed {
                        <width>70</width>
                        <height>16777215</height>
                       </size>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
                      </property>
                     </widget>
                    </item>
@@ -1924,6 +2321,15 @@ QPushButton:pressed {
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
+                     </property>
                     </widget>
                    </item>
                    <item>
@@ -1949,6 +2355,15 @@ QPushButton:pressed {
                        <width>70</width>
                        <height>16777215</height>
                       </size>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
                      </property>
                     </widget>
                    </item>
@@ -2033,6 +2448,15 @@ QPushButton:pressed {
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
+                     </property>
                     </widget>
                    </item>
                    <item>
@@ -2058,6 +2482,15 @@ QPushButton:pressed {
                        <width>70</width>
                        <height>16777215</height>
                       </size>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
                      </property>
                     </widget>
                    </item>
@@ -2142,6 +2575,15 @@ QPushButton:pressed {
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
+                     </property>
                     </widget>
                    </item>
                    <item>
@@ -2167,6 +2609,15 @@ QPushButton:pressed {
                        <width>70</width>
                        <height>16777215</height>
                       </size>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
                      </property>
                     </widget>
                    </item>
@@ -2251,6 +2702,15 @@ QPushButton:pressed {
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
+                     </property>
                     </widget>
                    </item>
                    <item>
@@ -2276,6 +2736,15 @@ QPushButton:pressed {
                        <width>70</width>
                        <height>16777215</height>
                       </size>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
                      </property>
                     </widget>
                    </item>
@@ -2360,6 +2829,15 @@ QPushButton:pressed {
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
+                     </property>
                     </widget>
                    </item>
                    <item>
@@ -2385,6 +2863,15 @@ QPushButton:pressed {
                        <width>70</width>
                        <height>16777215</height>
                       </size>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
                      </property>
                     </widget>
                    </item>
@@ -2469,6 +2956,15 @@ QPushButton:pressed {
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
+                     </property>
                     </widget>
                    </item>
                    <item>
@@ -2494,6 +2990,15 @@ QPushButton:pressed {
                        <width>70</width>
                        <height>16777215</height>
                       </size>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
                      </property>
                     </widget>
                    </item>
@@ -2578,6 +3083,15 @@ QPushButton:pressed {
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
+                     </property>
                     </widget>
                    </item>
                    <item>
@@ -2603,6 +3117,15 @@ QPushButton:pressed {
                        <width>70</width>
                        <height>16777215</height>
                       </size>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
                      </property>
                     </widget>
                    </item>
@@ -2687,6 +3210,15 @@ QPushButton:pressed {
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
+                     </property>
                     </widget>
                    </item>
                    <item>
@@ -2712,6 +3244,15 @@ QPushButton:pressed {
                        <width>70</width>
                        <height>16777215</height>
                       </size>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
                      </property>
                     </widget>
                    </item>
@@ -2796,6 +3337,15 @@ QPushButton:pressed {
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
+                     </property>
                     </widget>
                    </item>
                    <item>
@@ -2821,6 +3371,15 @@ QPushButton:pressed {
                        <width>70</width>
                        <height>16777215</height>
                       </size>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
                      </property>
                     </widget>
                    </item>
@@ -2905,6 +3464,15 @@ QPushButton:pressed {
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
+                     </property>
                     </widget>
                    </item>
                    <item>
@@ -2930,6 +3498,15 @@ QPushButton:pressed {
                        <width>70</width>
                        <height>16777215</height>
                       </size>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
                      </property>
                     </widget>
                    </item>
@@ -3014,6 +3591,15 @@ QPushButton:pressed {
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
+                     </property>
                     </widget>
                    </item>
                    <item>
@@ -3039,6 +3625,15 @@ QPushButton:pressed {
                        <width>70</width>
                        <height>16777215</height>
                       </size>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
                      </property>
                     </widget>
                    </item>
@@ -3123,6 +3718,15 @@ QPushButton:pressed {
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
+                     </property>
                     </widget>
                    </item>
                    <item>
@@ -3148,6 +3752,15 @@ QPushButton:pressed {
                        <width>70</width>
                        <height>16777215</height>
                       </size>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
                      </property>
                     </widget>
                    </item>
@@ -3232,6 +3845,15 @@ QPushButton:pressed {
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
+                     </property>
                     </widget>
                    </item>
                    <item>
@@ -3257,6 +3879,15 @@ QPushButton:pressed {
                        <width>70</width>
                        <height>16777215</height>
                       </size>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
                      </property>
                     </widget>
                    </item>
@@ -3341,6 +3972,15 @@ QPushButton:pressed {
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
+                     </property>
                     </widget>
                    </item>
                    <item>
@@ -3366,6 +4006,15 @@ QPushButton:pressed {
                        <width>70</width>
                        <height>16777215</height>
                       </size>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
                      </property>
                     </widget>
                    </item>
@@ -3450,6 +4099,15 @@ QPushButton:pressed {
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
+                     </property>
                     </widget>
                    </item>
                    <item>
@@ -3475,6 +4133,15 @@ QPushButton:pressed {
                        <width>70</width>
                        <height>16777215</height>
                       </size>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
                      </property>
                     </widget>
                    </item>
@@ -3559,6 +4226,15 @@ QPushButton:pressed {
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
+                     </property>
                     </widget>
                    </item>
                    <item>
@@ -3584,6 +4260,15 @@ QPushButton:pressed {
                        <width>70</width>
                        <height>16777215</height>
                       </size>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string/>
                      </property>
                     </widget>
                    </item>
@@ -3674,6 +4359,9 @@ padding-top:8px;
                  <width>185</width>
                  <height>50</height>
                 </size>
+               </property>
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
                </property>
                <property name="styleSheet">
                 <string notr="true">QPushButton {
@@ -3825,11 +4513,11 @@ QPushButton:pressed {
 	border: 1px solid rgba(0, 170, 255, 0.71);
 	height: 20px;
 	width: 20px;
-
+	border-radius: 5px;
 }
 
 QCheckBox::indicator:checked{
-	background: rgba(50, 170, 255, 0.58);
+	background-color: rgb(69, 118, 178);
 	height: 20px;
 	width: 20px;
 }
@@ -3889,6 +4577,9 @@ QCheckBox::indicator:checked{
                        <bold>false</bold>
                       </font>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
                      </property>
@@ -3916,6 +4607,9 @@ QCheckBox::indicator:checked{
                        <bold>false</bold>
                       </font>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
                      </property>
@@ -3936,6 +4630,9 @@ QCheckBox::indicator:checked{
                        <italic>false</italic>
                        <bold>false</bold>
                       </font>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
                      </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
@@ -3958,6 +4655,9 @@ QCheckBox::indicator:checked{
                        <bold>false</bold>
                       </font>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
                      </property>
@@ -3978,6 +4678,9 @@ QCheckBox::indicator:checked{
                        <italic>false</italic>
                        <bold>false</bold>
                       </font>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
                      </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
@@ -4000,6 +4703,9 @@ QCheckBox::indicator:checked{
                        <bold>false</bold>
                       </font>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
                      </property>
@@ -4021,6 +4727,9 @@ QCheckBox::indicator:checked{
                        <bold>false</bold>
                       </font>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
                      </property>
@@ -4041,6 +4750,9 @@ QCheckBox::indicator:checked{
                        <italic>false</italic>
                        <bold>false</bold>
                       </font>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::NoFocus</enum>
                      </property>
                      <property name="styleSheet">
                       <string notr="true">font: 14pt &quot;Segoe UI&quot;;</string>
@@ -4140,6 +4852,9 @@ padding-top:8px;
                  <width>185</width>
                  <height>50</height>
                 </size>
+               </property>
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
                </property>
                <property name="styleSheet">
                 <string notr="true">QPushButton {
@@ -4370,6 +5085,22 @@ QPushButton:pressed {
           </item>
           <item>
            <widget class="QFrame" name="InformationFrame_7">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+    background-color: rgb(217, 217, 217);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0px;
+    font-size: 14px;
+    color: #333;
+}
+
+QLineEdit:focus {
+    background-color: rgb(217, 217, 217);
+    border: 1px solid #66afe9;
+    outline: none;
+}</string>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -4452,6 +5183,12 @@ QPushButton:pressed {
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
                     </widget>
                    </item>
                    <item>
@@ -4477,6 +5214,12 @@ QPushButton:pressed {
                        <width>70</width>
                        <height>16777215</height>
                       </size>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
                      </property>
                     </widget>
                    </item>
@@ -4561,6 +5304,12 @@ QPushButton:pressed {
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
                     </widget>
                    </item>
                    <item>
@@ -4586,6 +5335,12 @@ QPushButton:pressed {
                        <width>70</width>
                        <height>16777215</height>
                       </size>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
                      </property>
                     </widget>
                    </item>
@@ -4670,6 +5425,12 @@ QPushButton:pressed {
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
                     </widget>
                    </item>
                    <item>
@@ -4695,6 +5456,12 @@ QPushButton:pressed {
                        <width>70</width>
                        <height>16777215</height>
                       </size>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
                      </property>
                     </widget>
                    </item>
@@ -4779,6 +5546,12 @@ QPushButton:pressed {
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
                     </widget>
                    </item>
                    <item>
@@ -4804,6 +5577,12 @@ QPushButton:pressed {
                        <width>70</width>
                        <height>16777215</height>
                       </size>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
                      </property>
                     </widget>
                    </item>
@@ -4888,6 +5667,12 @@ QPushButton:pressed {
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
                     </widget>
                    </item>
                    <item>
@@ -4913,6 +5698,12 @@ QPushButton:pressed {
                        <width>70</width>
                        <height>16777215</height>
                       </size>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
                      </property>
                     </widget>
                    </item>
@@ -4997,6 +5788,12 @@ QPushButton:pressed {
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
                     </widget>
                    </item>
                    <item>
@@ -5022,6 +5819,12 @@ QPushButton:pressed {
                        <width>70</width>
                        <height>16777215</height>
                       </size>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
                      </property>
                     </widget>
                    </item>
@@ -5106,6 +5909,12 @@ QPushButton:pressed {
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
                     </widget>
                    </item>
                    <item>
@@ -5131,6 +5940,12 @@ QPushButton:pressed {
                        <width>70</width>
                        <height>16777215</height>
                       </size>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
                      </property>
                     </widget>
                    </item>
@@ -5215,6 +6030,12 @@ QPushButton:pressed {
                        <height>16777215</height>
                       </size>
                      </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
                     </widget>
                    </item>
                    <item>
@@ -5240,6 +6061,12 @@ QPushButton:pressed {
                        <width>70</width>
                        <height>16777215</height>
                       </size>
+                     </property>
+                     <property name="focusPolicy">
+                      <enum>Qt::StrongFocus</enum>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
                      </property>
                     </widget>
                    </item>
@@ -5330,6 +6157,9 @@ padding-top:8px;
                  <width>185</width>
                  <height>50</height>
                 </size>
+               </property>
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
                </property>
                <property name="styleSheet">
                 <string notr="true">QPushButton {
@@ -5571,6 +6401,9 @@ padding-top:8px;
                  <height>50</height>
                 </size>
                </property>
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
                <property name="styleSheet">
                 <string notr="true">QPushButton {
 	background-color: rgb(69, 118, 178);
@@ -5631,7 +6464,7 @@ QPushButton:pressed {
          <string notr="true">color: rgba(50, 50, 50, 150);</string>
         </property>
         <property name="text">
-         <string>developed by Jucelio Tavares Junior</string>
+         <string>developed by Jucélio Tavares Junior</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
@@ -5643,6 +6476,8 @@ QPushButton:pressed {
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
  <connections/>
 </ui>

@@ -31,6 +31,8 @@ def webScraping(x):
         else:
             driver.get('https://statusinvest.com.br/fundos-imobiliarios/busca-avancada')
 
+        time.sleep(2)
+
         button_element = wait_for_clickable(driver, '.find.waves-effect.waves-light.btn.btn-large.btn-main.fw-700.fs-3.pl-2.pr-2.pl-sm-3.pr-sm-3.tooltipped')
         button_element.click()
         time.sleep(2)
@@ -46,7 +48,7 @@ def webScraping(x):
         driver.quit()
 
 
-def wait_for_clickable(driver, selector, timeout=10):
+def wait_for_clickable(driver, selector, timeout=8):
     wait = WebDriverWait(driver, timeout)
     return wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, selector)))
 
@@ -84,7 +86,6 @@ def apply_specific_filters( x, tabela):
             tabela = tabela[(tabela["DY"] >= 8) & (tabela["DY"] <=20)]
             tabela = tabela[tabela["P/VP"] <=1.6]
             tabela = tabela[tabela["CAGR DIVIDENDOS 3 ANOS"] >=6]
-#            tabela = tabela[tabela[" CAGR VALOR CORA 3 ANOS"] >=0]
 
     except Exception as e:
         print("Ocorreu um erro inesperado na execução do apply_specific_filters", e)

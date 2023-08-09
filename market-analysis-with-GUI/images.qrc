@@ -1,5 +1,5 @@
 <RCC>
-    <qresource prefix="/Images">
+    <qresource prefix="/img">
         <file>assets/trend.png</file>
     </qresource>
 </RCC>

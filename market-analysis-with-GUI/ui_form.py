@@ -18,12 +18,16 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
 from PySide6.QtWidgets import (QApplication, QCheckBox, QFrame, QHBoxLayout,
     QLabel, QLineEdit, QPushButton, QSizePolicy,
     QSpacerItem, QStackedWidget, QVBoxLayout, QWidget)
+import images_rc
 
 class Ui_Widget(object):
     def setupUi(self, Widget):
         if not Widget.objectName():
             Widget.setObjectName(u"Widget")
-        Widget.resize(1584, 1056)
+        Widget.resize(1206, 770)
+        icon = QIcon()
+        icon.addFile(u":/img/assets/trend.png", QSize(), QIcon.Normal, QIcon.Off)
+        Widget.setWindowIcon(icon)
         Widget.setStyleSheet(u"background-color: rgb(175, 175, 175);")
         self.verticalLayout = QVBoxLayout(Widget)
         self.verticalLayout.setSpacing(0)
@@ -31,6 +35,7 @@ class Ui_Widget(object):
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
         self.stackedWidget = QStackedWidget(Widget)
         self.stackedWidget.setObjectName(u"stackedWidget")
+        self.stackedWidget.setFocusPolicy(Qt.StrongFocus)
         self.welcomePage = QWidget()
         self.welcomePage.setObjectName(u"welcomePage")
         self.verticalLayout_2 = QVBoxLayout(self.welcomePage)
@@ -180,6 +185,7 @@ class Ui_Widget(object):
         font2.setBold(False)
         font2.setItalic(False)
         self.acoes.setFont(font2)
+        self.acoes.setFocusPolicy(Qt.NoFocus)
         self.acoes.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.acoes.setIconSize(QSize(31, 30))
         self.acoes.setAutoExclusive(True)
@@ -189,6 +195,7 @@ class Ui_Widget(object):
         self.fiis = QCheckBox(self.GenderBox_2)
         self.fiis.setObjectName(u"fiis")
         self.fiis.setFont(font2)
+        self.fiis.setFocusPolicy(Qt.NoFocus)
         self.fiis.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.fiis.setAutoExclusive(True)
 
@@ -248,6 +255,7 @@ class Ui_Widget(object):
         self.yes.setObjectName(u"yes")
         self.yes.setMinimumSize(QSize(0, 50))
         self.yes.setFont(font2)
+        self.yes.setFocusPolicy(Qt.NoFocus)
         self.yes.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.yes.setIconSize(QSize(31, 30))
         self.yes.setAutoExclusive(True)
@@ -257,6 +265,7 @@ class Ui_Widget(object):
         self.no = QCheckBox(self.KnowledgeBox_2)
         self.no.setObjectName(u"no")
         self.no.setFont(font2)
+        self.no.setFocusPolicy(Qt.NoFocus)
         self.no.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.no.setAutoExclusive(True)
 
@@ -292,6 +301,7 @@ class Ui_Widget(object):
         self.path = QLineEdit(self.KnowledgeBox_4)
         self.path.setObjectName(u"path")
         self.path.setMaximumSize(QSize(250, 25))
+        self.path.setFocusPolicy(Qt.StrongFocus)
         self.path.setStyleSheet(u"background: #5E5E5E;\n"
 "color: rgb(255, 255, 255);\n"
 "border: 1px solid rgba(0, 170, 255, 0.71);")
@@ -329,6 +339,7 @@ class Ui_Widget(object):
         self.NextWelcome.setObjectName(u"NextWelcome")
         self.NextWelcome.setMinimumSize(QSize(185, 50))
         self.NextWelcome.setMaximumSize(QSize(185, 50))
+        self.NextWelcome.setFocusPolicy(Qt.NoFocus)
         self.NextWelcome.setStyleSheet(u"QPushButton {\n"
 "	background-color: rgb(69, 118, 178);\n"
 "	color: rgb(255, 255, 255);\n"
@@ -361,19 +372,139 @@ class Ui_Widget(object):
         self.verticalLayout_2.addWidget(self.frame_2)
 
         self.stackedWidget.addWidget(self.welcomePage)
-        self.loadingPage = QWidget()
-        self.loadingPage.setObjectName(u"loadingPage")
-        self.horizontalLayout_26 = QHBoxLayout(self.loadingPage)
+        self.loadingAndErrorPage = QWidget()
+        self.loadingAndErrorPage.setObjectName(u"loadingAndErrorPage")
+        self.horizontalLayout_26 = QHBoxLayout(self.loadingAndErrorPage)
         self.horizontalLayout_26.setObjectName(u"horizontalLayout_26")
-        self.frame2 = QFrame(self.loadingPage)
+        self.frame_13 = QFrame(self.loadingAndErrorPage)
+        self.frame_13.setObjectName(u"frame_13")
+        self.frame_13.setFrameShape(QFrame.StyledPanel)
+        self.frame_13.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_27 = QHBoxLayout(self.frame_13)
+        self.horizontalLayout_27.setObjectName(u"horizontalLayout_27")
+        self.frame_22 = QFrame(self.frame_13)
+        self.frame_22.setObjectName(u"frame_22")
+        self.frame_22.setMinimumSize(QSize(600, 300))
+        self.frame_22.setMaximumSize(QSize(600, 300))
+        self.frame_22.setStyleSheet(u"background-color: rgb(217, 217, 217);")
+        self.frame_22.setFrameShape(QFrame.NoFrame)
+        self.frame_22.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_23 = QVBoxLayout(self.frame_22)
+        self.verticalLayout_23.setObjectName(u"verticalLayout_23")
+        self.verticalLayout_23.setContentsMargins(0, -1, 0, 0)
+        self.frame_23 = QFrame(self.frame_22)
+        self.frame_23.setObjectName(u"frame_23")
+        self.frame_23.setMaximumSize(QSize(16777215, 90))
+        self.frame_23.setFrameShape(QFrame.StyledPanel)
+        self.frame_23.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_103 = QHBoxLayout(self.frame_23)
+        self.horizontalLayout_103.setObjectName(u"horizontalLayout_103")
+        self.label_73 = QLabel(self.frame_23)
+        self.label_73.setObjectName(u"label_73")
+        font5 = QFont()
+        font5.setPointSize(25)
+        font5.setBold(True)
+        self.label_73.setFont(font5)
+        self.label_73.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_103.addWidget(self.label_73)
+
+
+        self.verticalLayout_23.addWidget(self.frame_23)
+
+        self.verticalSpacer_17 = QSpacerItem(20, 20, QSizePolicy.Minimum, QSizePolicy.Fixed)
+
+        self.verticalLayout_23.addItem(self.verticalSpacer_17)
+
+        self.InformationFrame_8 = QFrame(self.frame_22)
+        self.InformationFrame_8.setObjectName(u"InformationFrame_8")
+        self.InformationFrame_8.setFrameShape(QFrame.StyledPanel)
+        self.InformationFrame_8.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_24 = QVBoxLayout(self.InformationFrame_8)
+        self.verticalLayout_24.setObjectName(u"verticalLayout_24")
+        self.label_18 = QLabel(self.InformationFrame_8)
+        self.label_18.setObjectName(u"label_18")
+        font6 = QFont()
+        font6.setFamilies([u"Arial"])
+        font6.setPointSize(11)
+        font6.setBold(False)
+        font6.setItalic(False)
+        self.label_18.setFont(font6)
+        self.label_18.setStyleSheet(u"")
+        self.label_18.setAlignment(Qt.AlignCenter)
+
+        self.verticalLayout_24.addWidget(self.label_18)
+
+
+        self.verticalLayout_23.addWidget(self.InformationFrame_8)
+
+        self.verticalSpacer_18 = QSpacerItem(20, 30, QSizePolicy.Minimum, QSizePolicy.Fixed)
+
+        self.verticalLayout_23.addItem(self.verticalSpacer_18)
+
+        self.ButtonFrame_8 = QFrame(self.frame_22)
+        self.ButtonFrame_8.setObjectName(u"ButtonFrame_8")
+        self.ButtonFrame_8.setMaximumSize(QSize(16777215, 80))
+        self.ButtonFrame_8.setStyleSheet(u"background-color: qlineargradient(spread:pad, x1:0.5, y1:0.5, x2:0.5, y2:1, stop:0.2746 rgba(217, 217, 217, 255), stop:0.287185 rgba(175, 175, 175, 255));\n"
+"padding-top:8px;\n"
+"\n"
+"")
+        self.ButtonFrame_8.setFrameShape(QFrame.NoFrame)
+        self.ButtonFrame_8.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_112 = QHBoxLayout(self.ButtonFrame_8)
+        self.horizontalLayout_112.setSpacing(0)
+        self.horizontalLayout_112.setObjectName(u"horizontalLayout_112")
+        self.horizontalLayout_112.setContentsMargins(0, 0, 0, 0)
+        self.horizontalSpacer_16 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_112.addItem(self.horizontalSpacer_16)
+
+        self.end_2 = QPushButton(self.ButtonFrame_8)
+        self.end_2.setObjectName(u"end_2")
+        self.end_2.setMinimumSize(QSize(185, 50))
+        self.end_2.setMaximumSize(QSize(185, 50))
+        self.end_2.setFocusPolicy(Qt.NoFocus)
+        self.end_2.setStyleSheet(u"QPushButton {\n"
+"	background-color: rgb(69, 118, 178);\n"
+"	color: rgb(255, 255, 255);\n"
+"	font: 22pt \"Arial\";\n"
+"	border-radius: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	border: 3px solid rgba(0, 170, 255, 0.71);\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"	border: 3px solid rgba(0, 170, 255, 0.71);\n"
+"    background-color:rgb(98, 168, 254);\n"
+"}")
+
+        self.horizontalLayout_112.addWidget(self.end_2)
+
+        self.horizontalSpacer_52 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_112.addItem(self.horizontalSpacer_52)
+
+
+        self.verticalLayout_23.addWidget(self.ButtonFrame_8)
+
+
+        self.horizontalLayout_27.addWidget(self.frame_22)
+
+
+        self.horizontalLayout_26.addWidget(self.frame_13)
+
+        self.frame2 = QFrame(self.loadingAndErrorPage)
         self.frame2.setObjectName(u"frame2")
+        self.frame2.setMinimumSize(QSize(110, 110))
         self.frame2.setMaximumSize(QSize(110, 110))
         self.frame2.setFrameShape(QFrame.StyledPanel)
         self.frame2.setFrameShadow(QFrame.Raised)
 
         self.horizontalLayout_26.addWidget(self.frame2)
 
-        self.stackedWidget.addWidget(self.loadingPage)
+        self.stackedWidget.addWidget(self.loadingAndErrorPage)
         self.stocksOptionsPage = QWidget()
         self.stocksOptionsPage.setObjectName(u"stocksOptionsPage")
         self.horizontalLayout_4 = QHBoxLayout(self.stocksOptionsPage)
@@ -402,9 +533,9 @@ class Ui_Widget(object):
         self.horizontalLayout_15.setObjectName(u"horizontalLayout_15")
         self.label_65 = QLabel(self.frame_16)
         self.label_65.setObjectName(u"label_65")
-        font5 = QFont()
-        font5.setPointSize(22)
-        self.label_65.setFont(font5)
+        font7 = QFont()
+        font7.setPointSize(22)
+        self.label_65.setFont(font7)
         self.label_65.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_15.addWidget(self.label_65)
@@ -425,11 +556,11 @@ class Ui_Widget(object):
 "	border: 1px solid rgba(0, 170, 255, 0.71);\n"
 "	height: 20px;\n"
 "	width: 20px;\n"
-"\n"
+"	border-radius: 5px;\n"
 "}\n"
 "\n"
 "QCheckBox::indicator:checked{\n"
-"	background: rgba(50, 170, 255, 0.58);\n"
+"	background-color: rgb(69, 118, 178);\n"
 "	height: 20px;\n"
 "	width: 20px;\n"
 "}\n"
@@ -451,6 +582,7 @@ class Ui_Widget(object):
         self.DY.setObjectName(u"DY")
         self.DY.setMinimumSize(QSize(0, 0))
         self.DY.setFont(font2)
+        self.DY.setFocusPolicy(Qt.NoFocus)
         self.DY.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.DY.setIconSize(QSize(31, 30))
         self.DY.setAutoExclusive(False)
@@ -460,6 +592,7 @@ class Ui_Widget(object):
         self.PL = QCheckBox(self.frame_6)
         self.PL.setObjectName(u"PL")
         self.PL.setFont(font2)
+        self.PL.setFocusPolicy(Qt.NoFocus)
         self.PL.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.PL.setAutoExclusive(False)
 
@@ -468,6 +601,7 @@ class Ui_Widget(object):
         self.PVP = QCheckBox(self.frame_6)
         self.PVP.setObjectName(u"PVP")
         self.PVP.setFont(font2)
+        self.PVP.setFocusPolicy(Qt.NoFocus)
         self.PVP.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.PVP.setAutoExclusive(False)
 
@@ -476,6 +610,7 @@ class Ui_Widget(object):
         self.MargemEbit = QCheckBox(self.frame_6)
         self.MargemEbit.setObjectName(u"MargemEbit")
         self.MargemEbit.setFont(font2)
+        self.MargemEbit.setFocusPolicy(Qt.NoFocus)
         self.MargemEbit.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.MargemEbit.setAutoExclusive(False)
 
@@ -484,6 +619,7 @@ class Ui_Widget(object):
         self.Margem = QCheckBox(self.frame_6)
         self.Margem.setObjectName(u"Margem")
         self.Margem.setFont(font2)
+        self.Margem.setFocusPolicy(Qt.NoFocus)
         self.Margem.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.Margem.setAutoExclusive(False)
 
@@ -492,6 +628,7 @@ class Ui_Widget(object):
         self.P_EBIT = QCheckBox(self.frame_6)
         self.P_EBIT.setObjectName(u"P_EBIT")
         self.P_EBIT.setFont(font2)
+        self.P_EBIT.setFocusPolicy(Qt.NoFocus)
         self.P_EBIT.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.P_EBIT.setAutoExclusive(False)
 
@@ -500,6 +637,7 @@ class Ui_Widget(object):
         self.Divida_Pat = QCheckBox(self.frame_6)
         self.Divida_Pat.setObjectName(u"Divida_Pat")
         self.Divida_Pat.setFont(font2)
+        self.Divida_Pat.setFocusPolicy(Qt.NoFocus)
         self.Divida_Pat.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.Divida_Pat.setAutoExclusive(False)
 
@@ -508,6 +646,7 @@ class Ui_Widget(object):
         self.P_Cap = QCheckBox(self.frame_6)
         self.P_Cap.setObjectName(u"P_Cap")
         self.P_Cap.setFont(font2)
+        self.P_Cap.setFocusPolicy(Qt.NoFocus)
         self.P_Cap.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.P_Cap.setAutoExclusive(False)
 
@@ -516,6 +655,7 @@ class Ui_Widget(object):
         self.ROE = QCheckBox(self.frame_6)
         self.ROE.setObjectName(u"ROE")
         self.ROE.setFont(font2)
+        self.ROE.setFocusPolicy(Qt.NoFocus)
         self.ROE.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.ROE.setAutoExclusive(False)
 
@@ -534,6 +674,7 @@ class Ui_Widget(object):
         self.ROA.setObjectName(u"ROA")
         self.ROA.setMinimumSize(QSize(0, 0))
         self.ROA.setFont(font2)
+        self.ROA.setFocusPolicy(Qt.NoFocus)
         self.ROA.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.ROA.setIconSize(QSize(31, 30))
         self.ROA.setAutoExclusive(False)
@@ -543,6 +684,7 @@ class Ui_Widget(object):
         self.ROIC = QCheckBox(self.frame_5)
         self.ROIC.setObjectName(u"ROIC")
         self.ROIC.setFont(font2)
+        self.ROIC.setFocusPolicy(Qt.NoFocus)
         self.ROIC.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.ROIC.setAutoExclusive(False)
 
@@ -551,6 +693,7 @@ class Ui_Widget(object):
         self.PatAti = QCheckBox(self.frame_5)
         self.PatAti.setObjectName(u"PatAti")
         self.PatAti.setFont(font2)
+        self.PatAti.setFocusPolicy(Qt.NoFocus)
         self.PatAti.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.PatAti.setAutoExclusive(False)
 
@@ -559,6 +702,7 @@ class Ui_Widget(object):
         self.PasAti = QCheckBox(self.frame_5)
         self.PasAti.setObjectName(u"PasAti")
         self.PasAti.setFont(font2)
+        self.PasAti.setFocusPolicy(Qt.NoFocus)
         self.PasAti.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.PasAti.setAutoExclusive(False)
 
@@ -567,6 +711,7 @@ class Ui_Widget(object):
         self.CAGRR = QCheckBox(self.frame_5)
         self.CAGRR.setObjectName(u"CAGRR")
         self.CAGRR.setFont(font2)
+        self.CAGRR.setFocusPolicy(Qt.NoFocus)
         self.CAGRR.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.CAGRR.setAutoExclusive(False)
 
@@ -575,6 +720,7 @@ class Ui_Widget(object):
         self.CAGRL = QCheckBox(self.frame_5)
         self.CAGRL.setObjectName(u"CAGRL")
         self.CAGRL.setFont(font2)
+        self.CAGRL.setFocusPolicy(Qt.NoFocus)
         self.CAGRL.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.CAGRL.setAutoExclusive(False)
 
@@ -583,6 +729,7 @@ class Ui_Widget(object):
         self.Liquidez = QCheckBox(self.frame_5)
         self.Liquidez.setObjectName(u"Liquidez")
         self.Liquidez.setFont(font2)
+        self.Liquidez.setFocusPolicy(Qt.NoFocus)
         self.Liquidez.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.Liquidez.setAutoExclusive(False)
 
@@ -591,6 +738,7 @@ class Ui_Widget(object):
         self.PEG = QCheckBox(self.frame_5)
         self.PEG.setObjectName(u"PEG")
         self.PEG.setFont(font2)
+        self.PEG.setFocusPolicy(Qt.NoFocus)
         self.PEG.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.PEG.setAutoExclusive(False)
 
@@ -599,6 +747,7 @@ class Ui_Widget(object):
         self.Valor = QCheckBox(self.frame_5)
         self.Valor.setObjectName(u"Valor")
         self.Valor.setFont(font2)
+        self.Valor.setFocusPolicy(Qt.NoFocus)
         self.Valor.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.Valor.setAutoExclusive(False)
 
@@ -638,6 +787,7 @@ class Ui_Widget(object):
         self.stocksOptions.setObjectName(u"stocksOptions")
         self.stocksOptions.setMinimumSize(QSize(185, 50))
         self.stocksOptions.setMaximumSize(QSize(185, 50))
+        self.stocksOptions.setFocusPolicy(Qt.NoFocus)
         self.stocksOptions.setStyleSheet(u"QPushButton {\n"
 "	background-color: rgb(69, 118, 178);\n"
 "	color: rgb(255, 255, 255);\n"
@@ -697,25 +847,25 @@ class Ui_Widget(object):
         self.horizontalLayout_24.setContentsMargins(34, 0, 25, 0)
         self.label_68 = QLabel(self.frame_19)
         self.label_68.setObjectName(u"label_68")
-        font6 = QFont()
-        font6.setPointSize(17)
-        self.label_68.setFont(font6)
+        font8 = QFont()
+        font8.setPointSize(17)
+        self.label_68.setFont(font8)
         self.label_68.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
         self.horizontalLayout_24.addWidget(self.label_68)
 
         self.label_2 = QLabel(self.frame_19)
         self.label_2.setObjectName(u"label_2")
-        font7 = QFont()
-        font7.setPointSize(15)
-        self.label_2.setFont(font7)
+        font9 = QFont()
+        font9.setPointSize(15)
+        self.label_2.setFont(font9)
         self.label_2.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_24.addWidget(self.label_2)
 
         self.label_3 = QLabel(self.frame_19)
         self.label_3.setObjectName(u"label_3")
-        self.label_3.setFont(font7)
+        self.label_3.setFont(font9)
         self.label_3.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_24.addWidget(self.label_3)
@@ -746,6 +896,21 @@ class Ui_Widget(object):
 
         self.InformationFrame_6 = QFrame(self.frame_14)
         self.InformationFrame_6.setObjectName(u"InformationFrame_6")
+        self.InformationFrame_6.setFocusPolicy(Qt.NoFocus)
+        self.InformationFrame_6.setStyleSheet(u"QLineEdit {\n"
+"    background-color: rgb(217, 217, 217);\n"
+"    border: 1px solid #ccc;\n"
+"    border-radius: 5px;\n"
+"    padding: 0px;\n"
+"    font-size: 14px;\n"
+"    color: #333;\n"
+"}\n"
+"\n"
+"QLineEdit:focus {\n"
+"    background-color: rgb(217, 217, 217);\n"
+"    border: 1px solid #66afe9;\n"
+"    outline: none;\n"
+"}")
         self.InformationFrame_6.setFrameShape(QFrame.StyledPanel)
         self.InformationFrame_6.setFrameShadow(QFrame.Raised)
         self.verticalLayout_20 = QVBoxLayout(self.InformationFrame_6)
@@ -777,6 +942,9 @@ class Ui_Widget(object):
         self.min_DY = QLineEdit(self.frame_24)
         self.min_DY.setObjectName(u"min_DY")
         self.min_DY.setMaximumSize(QSize(70, 16777215))
+        self.min_DY.setFocusPolicy(Qt.StrongFocus)
+        self.min_DY.setStyleSheet(u"")
+        self.min_DY.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_13.addWidget(self.min_DY)
 
@@ -787,6 +955,8 @@ class Ui_Widget(object):
         self.max_DY = QLineEdit(self.frame_24)
         self.max_DY.setObjectName(u"max_DY")
         self.max_DY.setMaximumSize(QSize(70, 16777215))
+        self.max_DY.setFocusPolicy(Qt.StrongFocus)
+        self.max_DY.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_13.addWidget(self.max_DY)
 
@@ -823,6 +993,8 @@ class Ui_Widget(object):
         self.min_PL = QLineEdit(self.frame_28)
         self.min_PL.setObjectName(u"min_PL")
         self.min_PL.setMaximumSize(QSize(70, 16777215))
+        self.min_PL.setFocusPolicy(Qt.StrongFocus)
+        self.min_PL.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_61.addWidget(self.min_PL)
 
@@ -833,6 +1005,8 @@ class Ui_Widget(object):
         self.max_PL = QLineEdit(self.frame_28)
         self.max_PL.setObjectName(u"max_PL")
         self.max_PL.setMaximumSize(QSize(70, 16777215))
+        self.max_PL.setFocusPolicy(Qt.StrongFocus)
+        self.max_PL.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_61.addWidget(self.max_PL)
 
@@ -869,6 +1043,8 @@ class Ui_Widget(object):
         self.min_PVP = QLineEdit(self.frame_32)
         self.min_PVP.setObjectName(u"min_PVP")
         self.min_PVP.setMaximumSize(QSize(70, 16777215))
+        self.min_PVP.setFocusPolicy(Qt.StrongFocus)
+        self.min_PVP.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_63.addWidget(self.min_PVP)
 
@@ -879,6 +1055,8 @@ class Ui_Widget(object):
         self.max_PVP = QLineEdit(self.frame_32)
         self.max_PVP.setObjectName(u"max_PVP")
         self.max_PVP.setMaximumSize(QSize(70, 16777215))
+        self.max_PVP.setFocusPolicy(Qt.StrongFocus)
+        self.max_PVP.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_63.addWidget(self.max_PVP)
 
@@ -915,6 +1093,8 @@ class Ui_Widget(object):
         self.min_MargemEbit = QLineEdit(self.frame_40)
         self.min_MargemEbit.setObjectName(u"min_MargemEbit")
         self.min_MargemEbit.setMaximumSize(QSize(70, 16777215))
+        self.min_MargemEbit.setFocusPolicy(Qt.StrongFocus)
+        self.min_MargemEbit.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_67.addWidget(self.min_MargemEbit)
 
@@ -925,6 +1105,8 @@ class Ui_Widget(object):
         self.max_MargemEbit = QLineEdit(self.frame_40)
         self.max_MargemEbit.setObjectName(u"max_MargemEbit")
         self.max_MargemEbit.setMaximumSize(QSize(70, 16777215))
+        self.max_MargemEbit.setFocusPolicy(Qt.StrongFocus)
+        self.max_MargemEbit.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_67.addWidget(self.max_MargemEbit)
 
@@ -961,6 +1143,8 @@ class Ui_Widget(object):
         self.min_Margem = QLineEdit(self.frame_74)
         self.min_Margem.setObjectName(u"min_Margem")
         self.min_Margem.setMaximumSize(QSize(70, 16777215))
+        self.min_Margem.setFocusPolicy(Qt.StrongFocus)
+        self.min_Margem.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_93.addWidget(self.min_Margem)
 
@@ -971,6 +1155,8 @@ class Ui_Widget(object):
         self.max_Margem = QLineEdit(self.frame_74)
         self.max_Margem.setObjectName(u"max_Margem")
         self.max_Margem.setMaximumSize(QSize(70, 16777215))
+        self.max_Margem.setFocusPolicy(Qt.StrongFocus)
+        self.max_Margem.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_93.addWidget(self.max_Margem)
 
@@ -1007,6 +1193,8 @@ class Ui_Widget(object):
         self.min_P_EBIT = QLineEdit(self.frame_36)
         self.min_P_EBIT.setObjectName(u"min_P_EBIT")
         self.min_P_EBIT.setMaximumSize(QSize(70, 16777215))
+        self.min_P_EBIT.setFocusPolicy(Qt.StrongFocus)
+        self.min_P_EBIT.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_65.addWidget(self.min_P_EBIT)
 
@@ -1017,6 +1205,8 @@ class Ui_Widget(object):
         self.max_P_EBIT = QLineEdit(self.frame_36)
         self.max_P_EBIT.setObjectName(u"max_P_EBIT")
         self.max_P_EBIT.setMaximumSize(QSize(70, 16777215))
+        self.max_P_EBIT.setFocusPolicy(Qt.StrongFocus)
+        self.max_P_EBIT.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_65.addWidget(self.max_P_EBIT)
 
@@ -1053,6 +1243,8 @@ class Ui_Widget(object):
         self.min_Divida_Pat = QLineEdit(self.frame_44)
         self.min_Divida_Pat.setObjectName(u"min_Divida_Pat")
         self.min_Divida_Pat.setMaximumSize(QSize(70, 16777215))
+        self.min_Divida_Pat.setFocusPolicy(Qt.StrongFocus)
+        self.min_Divida_Pat.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_69.addWidget(self.min_Divida_Pat)
 
@@ -1063,6 +1255,8 @@ class Ui_Widget(object):
         self.max_Divida_Pat = QLineEdit(self.frame_44)
         self.max_Divida_Pat.setObjectName(u"max_Divida_Pat")
         self.max_Divida_Pat.setMaximumSize(QSize(70, 16777215))
+        self.max_Divida_Pat.setFocusPolicy(Qt.StrongFocus)
+        self.max_Divida_Pat.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_69.addWidget(self.max_Divida_Pat)
 
@@ -1099,6 +1293,8 @@ class Ui_Widget(object):
         self.min_P_Cap = QLineEdit(self.frame_56)
         self.min_P_Cap.setObjectName(u"min_P_Cap")
         self.min_P_Cap.setMaximumSize(QSize(70, 16777215))
+        self.min_P_Cap.setFocusPolicy(Qt.StrongFocus)
+        self.min_P_Cap.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_75.addWidget(self.min_P_Cap)
 
@@ -1109,6 +1305,8 @@ class Ui_Widget(object):
         self.max_P_Cap = QLineEdit(self.frame_56)
         self.max_P_Cap.setObjectName(u"max_P_Cap")
         self.max_P_Cap.setMaximumSize(QSize(70, 16777215))
+        self.max_P_Cap.setFocusPolicy(Qt.StrongFocus)
+        self.max_P_Cap.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_75.addWidget(self.max_P_Cap)
 
@@ -1145,6 +1343,8 @@ class Ui_Widget(object):
         self.min_ROE = QLineEdit(self.frame_52)
         self.min_ROE.setObjectName(u"min_ROE")
         self.min_ROE.setMaximumSize(QSize(70, 16777215))
+        self.min_ROE.setFocusPolicy(Qt.StrongFocus)
+        self.min_ROE.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_73.addWidget(self.min_ROE)
 
@@ -1155,6 +1355,8 @@ class Ui_Widget(object):
         self.max_ROE = QLineEdit(self.frame_52)
         self.max_ROE.setObjectName(u"max_ROE")
         self.max_ROE.setMaximumSize(QSize(70, 16777215))
+        self.max_ROE.setFocusPolicy(Qt.StrongFocus)
+        self.max_ROE.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_73.addWidget(self.max_ROE)
 
@@ -1191,6 +1393,8 @@ class Ui_Widget(object):
         self.min_ROA = QLineEdit(self.frame_48)
         self.min_ROA.setObjectName(u"min_ROA")
         self.min_ROA.setMaximumSize(QSize(70, 16777215))
+        self.min_ROA.setFocusPolicy(Qt.StrongFocus)
+        self.min_ROA.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_71.addWidget(self.min_ROA)
 
@@ -1201,6 +1405,8 @@ class Ui_Widget(object):
         self.max_ROA = QLineEdit(self.frame_48)
         self.max_ROA.setObjectName(u"max_ROA")
         self.max_ROA.setMaximumSize(QSize(70, 16777215))
+        self.max_ROA.setFocusPolicy(Qt.StrongFocus)
+        self.max_ROA.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_71.addWidget(self.max_ROA)
 
@@ -1237,6 +1443,8 @@ class Ui_Widget(object):
         self.min_ROIC = QLineEdit(self.frame_61)
         self.min_ROIC.setObjectName(u"min_ROIC")
         self.min_ROIC.setMaximumSize(QSize(70, 16777215))
+        self.min_ROIC.setFocusPolicy(Qt.StrongFocus)
+        self.min_ROIC.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_79.addWidget(self.min_ROIC)
 
@@ -1247,6 +1455,8 @@ class Ui_Widget(object):
         self.max_ROIC = QLineEdit(self.frame_61)
         self.max_ROIC.setObjectName(u"max_ROIC")
         self.max_ROIC.setMaximumSize(QSize(70, 16777215))
+        self.max_ROIC.setFocusPolicy(Qt.StrongFocus)
+        self.max_ROIC.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_79.addWidget(self.max_ROIC)
 
@@ -1283,6 +1493,8 @@ class Ui_Widget(object):
         self.min_PatAti = QLineEdit(self.frame_59)
         self.min_PatAti.setObjectName(u"min_PatAti")
         self.min_PatAti.setMaximumSize(QSize(70, 16777215))
+        self.min_PatAti.setFocusPolicy(Qt.StrongFocus)
+        self.min_PatAti.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_77.addWidget(self.min_PatAti)
 
@@ -1293,6 +1505,8 @@ class Ui_Widget(object):
         self.max_PatAti = QLineEdit(self.frame_59)
         self.max_PatAti.setObjectName(u"max_PatAti")
         self.max_PatAti.setMaximumSize(QSize(70, 16777215))
+        self.max_PatAti.setFocusPolicy(Qt.StrongFocus)
+        self.max_PatAti.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_77.addWidget(self.max_PatAti)
 
@@ -1329,6 +1543,8 @@ class Ui_Widget(object):
         self.min_PasAti = QLineEdit(self.frame_63)
         self.min_PasAti.setObjectName(u"min_PasAti")
         self.min_PasAti.setMaximumSize(QSize(70, 16777215))
+        self.min_PasAti.setFocusPolicy(Qt.StrongFocus)
+        self.min_PasAti.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_81.addWidget(self.min_PasAti)
 
@@ -1339,6 +1555,8 @@ class Ui_Widget(object):
         self.max_PasAti = QLineEdit(self.frame_63)
         self.max_PasAti.setObjectName(u"max_PasAti")
         self.max_PasAti.setMaximumSize(QSize(70, 16777215))
+        self.max_PasAti.setFocusPolicy(Qt.StrongFocus)
+        self.max_PasAti.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_81.addWidget(self.max_PasAti)
 
@@ -1375,6 +1593,8 @@ class Ui_Widget(object):
         self.min_CAGRR = QLineEdit(self.frame_67)
         self.min_CAGRR.setObjectName(u"min_CAGRR")
         self.min_CAGRR.setMaximumSize(QSize(70, 16777215))
+        self.min_CAGRR.setFocusPolicy(Qt.StrongFocus)
+        self.min_CAGRR.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_85.addWidget(self.min_CAGRR)
 
@@ -1385,6 +1605,8 @@ class Ui_Widget(object):
         self.max_CAGRR = QLineEdit(self.frame_67)
         self.max_CAGRR.setObjectName(u"max_CAGRR")
         self.max_CAGRR.setMaximumSize(QSize(70, 16777215))
+        self.max_CAGRR.setFocusPolicy(Qt.StrongFocus)
+        self.max_CAGRR.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_85.addWidget(self.max_CAGRR)
 
@@ -1421,6 +1643,8 @@ class Ui_Widget(object):
         self.min_CAGRL = QLineEdit(self.frame_65)
         self.min_CAGRL.setObjectName(u"min_CAGRL")
         self.min_CAGRL.setMaximumSize(QSize(70, 16777215))
+        self.min_CAGRL.setFocusPolicy(Qt.StrongFocus)
+        self.min_CAGRL.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_83.addWidget(self.min_CAGRL)
 
@@ -1431,6 +1655,8 @@ class Ui_Widget(object):
         self.max_CAGRL = QLineEdit(self.frame_65)
         self.max_CAGRL.setObjectName(u"max_CAGRL")
         self.max_CAGRL.setMaximumSize(QSize(70, 16777215))
+        self.max_CAGRL.setFocusPolicy(Qt.StrongFocus)
+        self.max_CAGRL.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_83.addWidget(self.max_CAGRL)
 
@@ -1467,6 +1693,8 @@ class Ui_Widget(object):
         self.min_Liquidez = QLineEdit(self.frame_72)
         self.min_Liquidez.setObjectName(u"min_Liquidez")
         self.min_Liquidez.setMaximumSize(QSize(70, 16777215))
+        self.min_Liquidez.setFocusPolicy(Qt.StrongFocus)
+        self.min_Liquidez.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_91.addWidget(self.min_Liquidez)
 
@@ -1477,6 +1705,8 @@ class Ui_Widget(object):
         self.max_Liquidez = QLineEdit(self.frame_72)
         self.max_Liquidez.setObjectName(u"max_Liquidez")
         self.max_Liquidez.setMaximumSize(QSize(70, 16777215))
+        self.max_Liquidez.setFocusPolicy(Qt.StrongFocus)
+        self.max_Liquidez.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_91.addWidget(self.max_Liquidez)
 
@@ -1513,6 +1743,8 @@ class Ui_Widget(object):
         self.min_PEG = QLineEdit(self.frame_71)
         self.min_PEG.setObjectName(u"min_PEG")
         self.min_PEG.setMaximumSize(QSize(70, 16777215))
+        self.min_PEG.setFocusPolicy(Qt.StrongFocus)
+        self.min_PEG.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_89.addWidget(self.min_PEG)
 
@@ -1523,6 +1755,8 @@ class Ui_Widget(object):
         self.max_PEG = QLineEdit(self.frame_71)
         self.max_PEG.setObjectName(u"max_PEG")
         self.max_PEG.setMaximumSize(QSize(70, 16777215))
+        self.max_PEG.setFocusPolicy(Qt.StrongFocus)
+        self.max_PEG.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_89.addWidget(self.max_PEG)
 
@@ -1559,6 +1793,8 @@ class Ui_Widget(object):
         self.min_Valor = QLineEdit(self.frame_69)
         self.min_Valor.setObjectName(u"min_Valor")
         self.min_Valor.setMaximumSize(QSize(70, 16777215))
+        self.min_Valor.setFocusPolicy(Qt.StrongFocus)
+        self.min_Valor.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_87.addWidget(self.min_Valor)
 
@@ -1569,6 +1805,8 @@ class Ui_Widget(object):
         self.max_Valor = QLineEdit(self.frame_69)
         self.max_Valor.setObjectName(u"max_Valor")
         self.max_Valor.setMaximumSize(QSize(70, 16777215))
+        self.max_Valor.setFocusPolicy(Qt.StrongFocus)
+        self.max_Valor.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_87.addWidget(self.max_Valor)
 
@@ -1606,6 +1844,7 @@ class Ui_Widget(object):
         self.stocksFilters.setObjectName(u"stocksFilters")
         self.stocksFilters.setMinimumSize(QSize(185, 50))
         self.stocksFilters.setMaximumSize(QSize(185, 50))
+        self.stocksFilters.setFocusPolicy(Qt.NoFocus)
         self.stocksFilters.setStyleSheet(u"QPushButton {\n"
 "	background-color: rgb(69, 118, 178);\n"
 "	color: rgb(255, 255, 255);\n"
@@ -1663,7 +1902,7 @@ class Ui_Widget(object):
         self.horizontalLayout_19.setObjectName(u"horizontalLayout_19")
         self.label_66 = QLabel(self.frame_17)
         self.label_66.setObjectName(u"label_66")
-        self.label_66.setFont(font5)
+        self.label_66.setFont(font7)
         self.label_66.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_19.addWidget(self.label_66)
@@ -1684,11 +1923,11 @@ class Ui_Widget(object):
 "	border: 1px solid rgba(0, 170, 255, 0.71);\n"
 "	height: 20px;\n"
 "	width: 20px;\n"
-"\n"
+"	border-radius: 5px;\n"
 "}\n"
 "\n"
 "QCheckBox::indicator:checked{\n"
-"	background: rgba(50, 170, 255, 0.58);\n"
+"	background-color: rgb(69, 118, 178);\n"
 "	height: 20px;\n"
 "	width: 20px;\n"
 "}\n"
@@ -1711,6 +1950,7 @@ class Ui_Widget(object):
         self.Fiis_DY.setObjectName(u"Fiis_DY")
         self.Fiis_DY.setMinimumSize(QSize(0, 0))
         self.Fiis_DY.setFont(font2)
+        self.Fiis_DY.setFocusPolicy(Qt.NoFocus)
         self.Fiis_DY.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.Fiis_DY.setIconSize(QSize(31, 30))
         self.Fiis_DY.setAutoExclusive(False)
@@ -1720,6 +1960,7 @@ class Ui_Widget(object):
         self.Fiis_DY_CAGR = QCheckBox(self.frame_7)
         self.Fiis_DY_CAGR.setObjectName(u"Fiis_DY_CAGR")
         self.Fiis_DY_CAGR.setFont(font2)
+        self.Fiis_DY_CAGR.setFocusPolicy(Qt.NoFocus)
         self.Fiis_DY_CAGR.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.Fiis_DY_CAGR.setAutoExclusive(False)
 
@@ -1728,6 +1969,7 @@ class Ui_Widget(object):
         self.Fiis_PVP = QCheckBox(self.frame_7)
         self.Fiis_PVP.setObjectName(u"Fiis_PVP")
         self.Fiis_PVP.setFont(font2)
+        self.Fiis_PVP.setFocusPolicy(Qt.NoFocus)
         self.Fiis_PVP.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.Fiis_PVP.setAutoExclusive(False)
 
@@ -1736,6 +1978,7 @@ class Ui_Widget(object):
         self.Fiis_Liquidez = QCheckBox(self.frame_7)
         self.Fiis_Liquidez.setObjectName(u"Fiis_Liquidez")
         self.Fiis_Liquidez.setFont(font2)
+        self.Fiis_Liquidez.setFocusPolicy(Qt.NoFocus)
         self.Fiis_Liquidez.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.Fiis_Liquidez.setAutoExclusive(False)
 
@@ -1744,6 +1987,7 @@ class Ui_Widget(object):
         self.Fiis_Cotas = QCheckBox(self.frame_7)
         self.Fiis_Cotas.setObjectName(u"Fiis_Cotas")
         self.Fiis_Cotas.setFont(font2)
+        self.Fiis_Cotas.setFocusPolicy(Qt.NoFocus)
         self.Fiis_Cotas.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.Fiis_Cotas.setAutoExclusive(False)
 
@@ -1752,6 +1996,7 @@ class Ui_Widget(object):
         self.Fiis_Dividendo = QCheckBox(self.frame_7)
         self.Fiis_Dividendo.setObjectName(u"Fiis_Dividendo")
         self.Fiis_Dividendo.setFont(font2)
+        self.Fiis_Dividendo.setFocusPolicy(Qt.NoFocus)
         self.Fiis_Dividendo.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.Fiis_Dividendo.setAutoExclusive(False)
 
@@ -1760,6 +2005,7 @@ class Ui_Widget(object):
         self.Fiis_CAGR = QCheckBox(self.frame_7)
         self.Fiis_CAGR.setObjectName(u"Fiis_CAGR")
         self.Fiis_CAGR.setFont(font2)
+        self.Fiis_CAGR.setFocusPolicy(Qt.NoFocus)
         self.Fiis_CAGR.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.Fiis_CAGR.setAutoExclusive(False)
 
@@ -1768,6 +2014,7 @@ class Ui_Widget(object):
         self.Fiis_Valor = QCheckBox(self.frame_7)
         self.Fiis_Valor.setObjectName(u"Fiis_Valor")
         self.Fiis_Valor.setFont(font2)
+        self.Fiis_Valor.setFocusPolicy(Qt.NoFocus)
         self.Fiis_Valor.setStyleSheet(u"font: 14pt \"Segoe UI\";")
         self.Fiis_Valor.setAutoExclusive(False)
 
@@ -1807,6 +2054,7 @@ class Ui_Widget(object):
         self.fiisOptions.setObjectName(u"fiisOptions")
         self.fiisOptions.setMinimumSize(QSize(185, 50))
         self.fiisOptions.setMaximumSize(QSize(185, 50))
+        self.fiisOptions.setFocusPolicy(Qt.NoFocus)
         self.fiisOptions.setStyleSheet(u"QPushButton {\n"
 "	background-color: rgb(69, 118, 178);\n"
 "	color: rgb(255, 255, 255);\n"
@@ -1866,21 +2114,21 @@ class Ui_Widget(object):
         self.horizontalLayout_94.setContentsMargins(34, 0, 25, 0)
         self.label_69 = QLabel(self.frame_20)
         self.label_69.setObjectName(u"label_69")
-        self.label_69.setFont(font6)
+        self.label_69.setFont(font8)
         self.label_69.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
         self.horizontalLayout_94.addWidget(self.label_69)
 
         self.label_4 = QLabel(self.frame_20)
         self.label_4.setObjectName(u"label_4")
-        self.label_4.setFont(font7)
+        self.label_4.setFont(font9)
         self.label_4.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_94.addWidget(self.label_4)
 
         self.label_5 = QLabel(self.frame_20)
         self.label_5.setObjectName(u"label_5")
-        self.label_5.setFont(font7)
+        self.label_5.setFont(font9)
         self.label_5.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_94.addWidget(self.label_5)
@@ -1911,6 +2159,20 @@ class Ui_Widget(object):
 
         self.InformationFrame_7 = QFrame(self.frame_18)
         self.InformationFrame_7.setObjectName(u"InformationFrame_7")
+        self.InformationFrame_7.setStyleSheet(u"QLineEdit {\n"
+"    background-color: rgb(217, 217, 217);\n"
+"    border: 1px solid #ccc;\n"
+"    border-radius: 5px;\n"
+"    padding: 0px;\n"
+"    font-size: 14px;\n"
+"    color: #333;\n"
+"}\n"
+"\n"
+"QLineEdit:focus {\n"
+"    background-color: rgb(217, 217, 217);\n"
+"    border: 1px solid #66afe9;\n"
+"    outline: none;\n"
+"}")
         self.InformationFrame_7.setFrameShape(QFrame.StyledPanel)
         self.InformationFrame_7.setFrameShadow(QFrame.Raised)
         self.verticalLayout_22 = QVBoxLayout(self.InformationFrame_7)
@@ -1942,6 +2204,8 @@ class Ui_Widget(object):
         self.min_Fiis_DY = QLineEdit(self.frame_76)
         self.min_Fiis_DY.setObjectName(u"min_Fiis_DY")
         self.min_Fiis_DY.setMaximumSize(QSize(70, 16777215))
+        self.min_Fiis_DY.setFocusPolicy(Qt.StrongFocus)
+        self.min_Fiis_DY.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_95.addWidget(self.min_Fiis_DY)
 
@@ -1952,6 +2216,8 @@ class Ui_Widget(object):
         self.max_Fiis_DY = QLineEdit(self.frame_76)
         self.max_Fiis_DY.setObjectName(u"max_Fiis_DY")
         self.max_Fiis_DY.setMaximumSize(QSize(70, 16777215))
+        self.max_Fiis_DY.setFocusPolicy(Qt.StrongFocus)
+        self.max_Fiis_DY.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_95.addWidget(self.max_Fiis_DY)
 
@@ -1988,6 +2254,8 @@ class Ui_Widget(object):
         self.min_Fiis_PVP = QLineEdit(self.frame_80)
         self.min_Fiis_PVP.setObjectName(u"min_Fiis_PVP")
         self.min_Fiis_PVP.setMaximumSize(QSize(70, 16777215))
+        self.min_Fiis_PVP.setFocusPolicy(Qt.StrongFocus)
+        self.min_Fiis_PVP.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_99.addWidget(self.min_Fiis_PVP)
 
@@ -1998,6 +2266,8 @@ class Ui_Widget(object):
         self.max_Fiis_PVP = QLineEdit(self.frame_80)
         self.max_Fiis_PVP.setObjectName(u"max_Fiis_PVP")
         self.max_Fiis_PVP.setMaximumSize(QSize(70, 16777215))
+        self.max_Fiis_PVP.setFocusPolicy(Qt.StrongFocus)
+        self.max_Fiis_PVP.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_99.addWidget(self.max_Fiis_PVP)
 
@@ -2034,6 +2304,8 @@ class Ui_Widget(object):
         self.min_Fiis_DY_CAGR = QLineEdit(self.frame_82)
         self.min_Fiis_DY_CAGR.setObjectName(u"min_Fiis_DY_CAGR")
         self.min_Fiis_DY_CAGR.setMaximumSize(QSize(70, 16777215))
+        self.min_Fiis_DY_CAGR.setFocusPolicy(Qt.StrongFocus)
+        self.min_Fiis_DY_CAGR.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_101.addWidget(self.min_Fiis_DY_CAGR)
 
@@ -2044,6 +2316,8 @@ class Ui_Widget(object):
         self.max_Fiis_DY_CAGR = QLineEdit(self.frame_82)
         self.max_Fiis_DY_CAGR.setObjectName(u"max_Fiis_DY_CAGR")
         self.max_Fiis_DY_CAGR.setMaximumSize(QSize(70, 16777215))
+        self.max_Fiis_DY_CAGR.setFocusPolicy(Qt.StrongFocus)
+        self.max_Fiis_DY_CAGR.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_101.addWidget(self.max_Fiis_DY_CAGR)
 
@@ -2080,6 +2354,8 @@ class Ui_Widget(object):
         self.min_Fiis_Dividendo = QLineEdit(self.frame_86)
         self.min_Fiis_Dividendo.setObjectName(u"min_Fiis_Dividendo")
         self.min_Fiis_Dividendo.setMaximumSize(QSize(70, 16777215))
+        self.min_Fiis_Dividendo.setFocusPolicy(Qt.StrongFocus)
+        self.min_Fiis_Dividendo.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_105.addWidget(self.min_Fiis_Dividendo)
 
@@ -2090,6 +2366,8 @@ class Ui_Widget(object):
         self.max_Fiis_Dividendo = QLineEdit(self.frame_86)
         self.max_Fiis_Dividendo.setObjectName(u"max_Fiis_Dividendo")
         self.max_Fiis_Dividendo.setMaximumSize(QSize(70, 16777215))
+        self.max_Fiis_Dividendo.setFocusPolicy(Qt.StrongFocus)
+        self.max_Fiis_Dividendo.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_105.addWidget(self.max_Fiis_Dividendo)
 
@@ -2126,6 +2404,8 @@ class Ui_Widget(object):
         self.min_Fiis_CAGR = QLineEdit(self.frame_88)
         self.min_Fiis_CAGR.setObjectName(u"min_Fiis_CAGR")
         self.min_Fiis_CAGR.setMaximumSize(QSize(70, 16777215))
+        self.min_Fiis_CAGR.setFocusPolicy(Qt.StrongFocus)
+        self.min_Fiis_CAGR.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_107.addWidget(self.min_Fiis_CAGR)
 
@@ -2136,6 +2416,8 @@ class Ui_Widget(object):
         self.max_Fiis_CAGR = QLineEdit(self.frame_88)
         self.max_Fiis_CAGR.setObjectName(u"max_Fiis_CAGR")
         self.max_Fiis_CAGR.setMaximumSize(QSize(70, 16777215))
+        self.max_Fiis_CAGR.setFocusPolicy(Qt.StrongFocus)
+        self.max_Fiis_CAGR.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_107.addWidget(self.max_Fiis_CAGR)
 
@@ -2172,6 +2454,8 @@ class Ui_Widget(object):
         self.min_Fiis_Liquidez = QLineEdit(self.frame_106)
         self.min_Fiis_Liquidez.setObjectName(u"min_Fiis_Liquidez")
         self.min_Fiis_Liquidez.setMaximumSize(QSize(70, 16777215))
+        self.min_Fiis_Liquidez.setFocusPolicy(Qt.StrongFocus)
+        self.min_Fiis_Liquidez.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_125.addWidget(self.min_Fiis_Liquidez)
 
@@ -2182,6 +2466,8 @@ class Ui_Widget(object):
         self.max_Fiis_Liquidez = QLineEdit(self.frame_106)
         self.max_Fiis_Liquidez.setObjectName(u"max_Fiis_Liquidez")
         self.max_Fiis_Liquidez.setMaximumSize(QSize(70, 16777215))
+        self.max_Fiis_Liquidez.setFocusPolicy(Qt.StrongFocus)
+        self.max_Fiis_Liquidez.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_125.addWidget(self.max_Fiis_Liquidez)
 
@@ -2218,6 +2504,8 @@ class Ui_Widget(object):
         self.min_Fiis_Cotas = QLineEdit(self.frame_78)
         self.min_Fiis_Cotas.setObjectName(u"min_Fiis_Cotas")
         self.min_Fiis_Cotas.setMaximumSize(QSize(70, 16777215))
+        self.min_Fiis_Cotas.setFocusPolicy(Qt.StrongFocus)
+        self.min_Fiis_Cotas.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_97.addWidget(self.min_Fiis_Cotas)
 
@@ -2228,6 +2516,8 @@ class Ui_Widget(object):
         self.max_Fiis_Cotas = QLineEdit(self.frame_78)
         self.max_Fiis_Cotas.setObjectName(u"max_Fiis_Cotas")
         self.max_Fiis_Cotas.setMaximumSize(QSize(70, 16777215))
+        self.max_Fiis_Cotas.setFocusPolicy(Qt.StrongFocus)
+        self.max_Fiis_Cotas.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_97.addWidget(self.max_Fiis_Cotas)
 
@@ -2264,6 +2554,8 @@ class Ui_Widget(object):
         self.min_Fiis_Valor = QLineEdit(self.frame_110)
         self.min_Fiis_Valor.setObjectName(u"min_Fiis_Valor")
         self.min_Fiis_Valor.setMaximumSize(QSize(70, 16777215))
+        self.min_Fiis_Valor.setFocusPolicy(Qt.StrongFocus)
+        self.min_Fiis_Valor.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_129.addWidget(self.min_Fiis_Valor)
 
@@ -2274,6 +2566,8 @@ class Ui_Widget(object):
         self.max_Fiis_Valor = QLineEdit(self.frame_110)
         self.max_Fiis_Valor.setObjectName(u"max_Fiis_Valor")
         self.max_Fiis_Valor.setMaximumSize(QSize(70, 16777215))
+        self.max_Fiis_Valor.setFocusPolicy(Qt.StrongFocus)
+        self.max_Fiis_Valor.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_129.addWidget(self.max_Fiis_Valor)
 
@@ -2311,6 +2605,7 @@ class Ui_Widget(object):
         self.fiisFilters.setObjectName(u"fiisFilters")
         self.fiisFilters.setMinimumSize(QSize(185, 50))
         self.fiisFilters.setMaximumSize(QSize(185, 50))
+        self.fiisFilters.setFocusPolicy(Qt.NoFocus)
         self.fiisFilters.setStyleSheet(u"QPushButton {\n"
 "	background-color: rgb(69, 118, 178);\n"
 "	color: rgb(255, 255, 255);\n"
@@ -2363,10 +2658,7 @@ class Ui_Widget(object):
         self.horizontalLayout_102.setObjectName(u"horizontalLayout_102")
         self.label_71 = QLabel(self.frame_21)
         self.label_71.setObjectName(u"label_71")
-        font8 = QFont()
-        font8.setPointSize(25)
-        font8.setBold(True)
-        self.label_71.setFont(font8)
+        self.label_71.setFont(font5)
         self.label_71.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_102.addWidget(self.label_71)
@@ -2386,12 +2678,7 @@ class Ui_Widget(object):
         self.verticalLayout_18.setObjectName(u"verticalLayout_18")
         self.label_17 = QLabel(self.InformationFrame_5)
         self.label_17.setObjectName(u"label_17")
-        font9 = QFont()
-        font9.setFamilies([u"Arial"])
-        font9.setPointSize(11)
-        font9.setBold(False)
-        font9.setItalic(False)
-        self.label_17.setFont(font9)
+        self.label_17.setFont(font6)
         self.label_17.setStyleSheet(u"")
         self.label_17.setAlignment(Qt.AlignCenter)
 
@@ -2425,6 +2712,7 @@ class Ui_Widget(object):
         self.end.setObjectName(u"end")
         self.end.setMinimumSize(QSize(185, 50))
         self.end.setMaximumSize(QSize(185, 50))
+        self.end.setFocusPolicy(Qt.NoFocus)
         self.end.setStyleSheet(u"QPushButton {\n"
 "	background-color: rgb(69, 118, 178);\n"
 "	color: rgb(255, 255, 255);\n"
@@ -2496,6 +2784,9 @@ class Ui_Widget(object):
         self.label_72.setText(QCoreApplication.translate("Widget", u"Qual o caminho da pasta de downloads?", None))
         self.path.setPlaceholderText(QCoreApplication.translate("Widget", u"D:\\User", None))
         self.NextWelcome.setText(QCoreApplication.translate("Widget", u"Seguinte", None))
+        self.label_73.setText(QCoreApplication.translate("Widget", u"Algum erro inesperado aconteceu!!", None))
+        self.label_18.setText(QCoreApplication.translate("Widget", u"Tente novamente mais tarde!", None))
+        self.end_2.setText(QCoreApplication.translate("Widget", u"In\u00edcio", None))
         self.label_65.setText(QCoreApplication.translate("Widget", u"Quais indicadores voc\u00ea deseja analisar?", None))
         self.DY.setText(QCoreApplication.translate("Widget", u"DY", None))
         self.PL.setText(QCoreApplication.translate("Widget", u"P/L", None))
@@ -2520,23 +2811,59 @@ class Ui_Widget(object):
         self.label_2.setText(QCoreApplication.translate("Widget", u"M\u00ednimo", None))
         self.label_3.setText(QCoreApplication.translate("Widget", u"M\u00e1ximo", None))
         self.label_24.setText(QCoreApplication.translate("Widget", u"DY", None))
+        self.min_DY.setPlaceholderText("")
+        self.max_DY.setPlaceholderText("")
         self.label_42.setText(QCoreApplication.translate("Widget", u"P/L", None))
+        self.min_PL.setPlaceholderText("")
+        self.max_PL.setPlaceholderText("")
         self.label_43.setText(QCoreApplication.translate("Widget", u"P/VP", None))
+        self.min_PVP.setPlaceholderText("")
+        self.max_PVP.setPlaceholderText("")
         self.label_45.setText(QCoreApplication.translate("Widget", u"Margem EBIT", None))
+        self.min_MargemEbit.setPlaceholderText("")
+        self.max_MargemEbit.setPlaceholderText("")
         self.label_58.setText(QCoreApplication.translate("Widget", u"Margem L\u00edquida", None))
+        self.min_Margem.setPlaceholderText("")
+        self.max_Margem.setPlaceholderText("")
         self.label_44.setText(QCoreApplication.translate("Widget", u"P/EBIT", None))
+        self.min_P_EBIT.setPlaceholderText("")
+        self.max_P_EBIT.setPlaceholderText("")
         self.label_46.setText(QCoreApplication.translate("Widget", u"D\u00edvida/Patrim\u00f4nio", None))
+        self.min_Divida_Pat.setPlaceholderText("")
+        self.max_Divida_Pat.setPlaceholderText("")
         self.label_49.setText(QCoreApplication.translate("Widget", u"P/Cap. Giro", None))
+        self.min_P_Cap.setPlaceholderText("")
+        self.max_P_Cap.setPlaceholderText("")
         self.label_48.setText(QCoreApplication.translate("Widget", u"ROE", None))
+        self.min_ROE.setPlaceholderText("")
+        self.max_ROE.setPlaceholderText("")
         self.label_47.setText(QCoreApplication.translate("Widget", u"ROA", None))
+        self.min_ROA.setPlaceholderText("")
+        self.max_ROA.setPlaceholderText("")
         self.label_51.setText(QCoreApplication.translate("Widget", u"ROIC", None))
+        self.min_ROIC.setPlaceholderText("")
+        self.max_ROIC.setPlaceholderText("")
         self.label_50.setText(QCoreApplication.translate("Widget", u"Patrim\u00f4nio/Ativos", None))
+        self.min_PatAti.setPlaceholderText("")
+        self.max_PatAti.setPlaceholderText("")
         self.label_52.setText(QCoreApplication.translate("Widget", u"Passivos/Ativos", None))
+        self.min_PasAti.setPlaceholderText("")
+        self.max_PasAti.setPlaceholderText("")
         self.label_54.setText(QCoreApplication.translate("Widget", u"CAGR Receita (5 anos)", None))
+        self.min_CAGRR.setPlaceholderText("")
+        self.max_CAGRR.setPlaceholderText("")
         self.label_53.setText(QCoreApplication.translate("Widget", u"CAGR Lucro (5 anos)", None))
+        self.min_CAGRL.setPlaceholderText("")
+        self.max_CAGRL.setPlaceholderText("")
         self.label_57.setText(QCoreApplication.translate("Widget", u"Liquidez Di\u00e1ria", None))
+        self.min_Liquidez.setPlaceholderText("")
+        self.max_Liquidez.setPlaceholderText("")
         self.label_56.setText(QCoreApplication.translate("Widget", u"PEG Ratio", None))
+        self.min_PEG.setPlaceholderText("")
+        self.max_PEG.setPlaceholderText("")
         self.label_55.setText(QCoreApplication.translate("Widget", u"Valor de Mercado", None))
+        self.min_Valor.setPlaceholderText("")
+        self.max_Valor.setPlaceholderText("")
         self.stocksFilters.setText(QCoreApplication.translate("Widget", u"Seguinte", None))
         self.label_66.setText(QCoreApplication.translate("Widget", u"Quais indicadores voc\u00ea deseja analisar?", None))
         self.Fiis_DY.setText(QCoreApplication.translate("Widget", u"DY", None))
@@ -2563,6 +2890,6 @@ class Ui_Widget(object):
         self.label_71.setText(QCoreApplication.translate("Widget", u"Planilha Atualizada com Sucesso!!", None))
         self.label_17.setText(QCoreApplication.translate("Widget", u"Uma planilha atualizada e filtrada estar\u00e1 salva na mesma pasta que o c\u00f3digo!", None))
         self.end.setText(QCoreApplication.translate("Widget", u"In\u00edcio", None))
-        self.label.setText(QCoreApplication.translate("Widget", u"developed by Jucelio Tavares Junior", None))
+        self.label.setText(QCoreApplication.translate("Widget", u"developed by Juc\u00e9lio Tavares Junior", None))
     # retranslateUi
 

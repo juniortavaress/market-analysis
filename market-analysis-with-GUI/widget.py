@@ -16,9 +16,6 @@ class Widget(QWidget):
         self.ui = Ui_Widget()
         self.ui.setupUi(self)
         self.callBack()
-
-
-
         self.animation()
         self.thread = None
 
@@ -97,6 +94,7 @@ class Widget(QWidget):
             self.ui.frame2.hide()
             self.ui.frame_13.show()
             self.nextPage(self.ui.loadingAndErrorPage)
+
 
 
     def Options(self, type):

@@ -24,7 +24,6 @@ class WebScrapingWorker(QObject):
 
     def run(self):
         self.web(self.x, self.xx, self.path, self.value)
-        print(error)
         self.finished_with_argument.emit(error)
 
     def web (self, x, xx, path, variaveis):
@@ -41,7 +40,8 @@ class WebScrapingWorker(QObject):
             self.save_datas(path, tabela_filtrada)
 
         except Exception as e:
-            print("Ocorreu um erro inesperado na execução do web", e)
+            error = str(e)
+            return error
 
     def webScraping(self, x):
         global error
@@ -64,7 +64,6 @@ class WebScrapingWorker(QObject):
             time.sleep(2)
 
         except Exception as e:
-            print("Ocorreu um erro inesperado na execução do webScraping", e)
             error = str(e)
             return error
 
@@ -113,7 +112,6 @@ class WebScrapingWorker(QObject):
             return tabela
 
         except Exception as e:
-            print("Ocorreu um erro inesperado na execução do apply_specific_filters", e)
             error = str(e)
             return error
 
@@ -163,7 +161,6 @@ class WebScrapingWorker(QObject):
             return tabela
 
         except Exception as e:
-            print("Ocorreu um erro inesperado na execução do apply_custom_filters", e)
             error = str(e)
             return error
 
@@ -173,10 +170,10 @@ class WebScrapingWorker(QObject):
 
         if os.path.exists(f"{path}statusinvest-busca-avancada.csv"):
             os.remove(f"{path}statusinvest-busca-avancada.csv")
-            print("Arquivo removido com sucesso.")
+            #print("Arquivo removido com sucesso.")
         else:
-            print("O arquivo não existe.")
-
+            #print("O arquivo não existe.")
+            pass
 
 
 
